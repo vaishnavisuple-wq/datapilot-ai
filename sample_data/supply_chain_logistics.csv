@@ -1,0 +1,833 @@
+Week,Warehouse,Product Line,Stock Level,Reorder Threshold,Lead Time (Days),Defect Rate (%),Units Fulfilled,Backordered Units,Holding Cost ($)
+2024-01-07,Hub Central (Chicago),Consumer Tech,1177,283,13.5,1.47,518,0,3336.8
+2024-01-07,Hub Central (Chicago),Home Living,149,241,14.3,0.57,403,29,433.92
+2024-01-07,Hub Central (Chicago),Industrial Tools,1445,312,13.1,2.11,176,0,2691.06
+2024-01-07,Hub Central (Chicago),Automotive Parts,1063,346,9.5,1.4,165,0,2118.82
+2024-01-07,West Coast (Los Angeles),Consumer Tech,228,358,14.3,1.23,467,16,642.31
+2024-01-07,West Coast (Los Angeles),Home Living,554,343,11.4,0.53,567,0,1002.0
+2024-01-07,West Coast (Los Angeles),Industrial Tools,911,306,14.4,2.79,416,0,1746.26
+2024-01-07,West Coast (Los Angeles),Automotive Parts,694,353,5.9,2.16,646,0,1365.8
+2024-01-07,East Port (Newark),Consumer Tech,927,356,13.4,1.94,351,0,2086.66
+2024-01-07,East Port (Newark),Home Living,642,235,10.5,2.23,179,0,1847.82
+2024-01-07,East Port (Newark),Industrial Tools,1487,229,7.9,3.76,695,0,3849.2
+2024-01-07,East Port (Newark),Automotive Parts,1137,388,13.9,0.38,345,0,3160.59
+2024-01-07,South Hub (Dallas),Consumer Tech,1050,237,17.1,3.26,510,0,2967.41
+2024-01-07,South Hub (Dallas),Home Living,808,301,15.6,0.33,121,0,2100.42
+2024-01-07,South Hub (Dallas),Industrial Tools,395,346,15.9,1.4,434,0,1114.1
+2024-01-07,South Hub (Dallas),Automotive Parts,709,398,13.5,0.45,749,0,1860.94
+2024-01-14,Hub Central (Chicago),Consumer Tech,789,357,10.4,1.74,452,0,2483.91
+2024-01-14,Hub Central (Chicago),Home Living,574,333,14.3,1.64,432,0,1683.7
+2024-01-14,Hub Central (Chicago),Industrial Tools,170,388,9.2,1.93,150,29,458.8
+2024-01-14,Hub Central (Chicago),Automotive Parts,907,222,8.9,0.97,747,0,1882.28
+2024-01-14,West Coast (Los Angeles),Consumer Tech,1065,376,9.9,1.39,571,0,2020.4
+2024-01-14,West Coast (Los Angeles),Home Living,1384,322,8.9,0.62,115,0,2691.16
+2024-01-14,West Coast (Los Angeles),Industrial Tools,1067,201,8.9,3.39,213,0,2766.99
+2024-01-14,West Coast (Los Angeles),Automotive Parts,1096,362,11.6,2.43,356,0,3109.05
+2024-01-14,East Port (Newark),Consumer Tech,689,200,13.3,2.9,786,0,1371.93
+2024-01-14,East Port (Newark),Home Living,1142,206,9.6,0.21,642,0,3433.85
+2024-01-14,East Port (Newark),Industrial Tools,1082,307,14.4,1.15,143,0,2761.52
+2024-01-14,East Port (Newark),Automotive Parts,661,265,12.7,0.48,417,0,1928.38
+2024-01-14,South Hub (Dallas),Consumer Tech,313,306,8.3,2.3,496,0,882.72
+2024-01-14,South Hub (Dallas),Home Living,646,360,14.1,0.98,762,0,1818.61
+2024-01-14,South Hub (Dallas),Industrial Tools,745,273,15.5,0.48,752,0,1502.26
+2024-01-14,South Hub (Dallas),Automotive Parts,1125,229,16.5,1.12,394,0,3253.83
+2024-01-21,Hub Central (Chicago),Consumer Tech,1018,288,10.1,3.68,313,0,1970.17
+2024-01-21,Hub Central (Chicago),Home Living,311,238,17.2,0.91,780,0,981.88
+2024-01-21,Hub Central (Chicago),Industrial Tools,322,390,12.2,2.94,167,8,984.74
+2024-01-21,Hub Central (Chicago),Automotive Parts,678,202,16.2,1.25,372,0,1545.19
+2024-01-21,West Coast (Los Angeles),Consumer Tech,978,343,15.5,2.08,741,0,2099.6
+2024-01-21,West Coast (Los Angeles),Home Living,1445,247,11.9,2.06,626,0,4544.83
+2024-01-21,West Coast (Los Angeles),Industrial Tools,1072,241,10.8,0.6,129,0,3120.52
+2024-01-21,West Coast (Los Angeles),Automotive Parts,245,283,16.7,2.01,542,18,543.34
+2024-01-21,East Port (Newark),Consumer Tech,513,249,12.0,1.08,627,0,1067.08
+2024-01-21,East Port (Newark),Home Living,790,283,11.0,1.92,735,0,1490.65
+2024-01-21,East Port (Newark),Industrial Tools,595,241,9.2,1.26,206,0,1212.11
+2024-01-21,East Port (Newark),Automotive Parts,247,237,13.9,2.34,655,0,669.77
+2024-01-21,South Hub (Dallas),Consumer Tech,313,259,7.1,2.24,442,0,781.9
+2024-01-21,South Hub (Dallas),Home Living,739,334,11.4,1.59,670,0,1976.6
+2024-01-21,South Hub (Dallas),Industrial Tools,1212,390,14.6,2.97,561,0,3546.22
+2024-01-21,South Hub (Dallas),Automotive Parts,253,328,14.6,1.17,237,8,522.82
+2024-01-28,Hub Central (Chicago),Consumer Tech,654,343,9.2,1.15,641,0,1183.89
+2024-01-28,Hub Central (Chicago),Home Living,1450,305,14.1,0.26,401,0,4096.71
+2024-01-28,Hub Central (Chicago),Industrial Tools,730,365,10.0,1.8,609,0,1688.18
+2024-01-28,Hub Central (Chicago),Automotive Parts,683,208,14.4,2.24,473,0,1339.03
+2024-01-28,West Coast (Los Angeles),Consumer Tech,421,302,14.7,0.76,692,0,1034.45
+2024-01-28,West Coast (Los Angeles),Home Living,476,327,15.8,2.47,110,0,1282.12
+2024-01-28,West Coast (Los Angeles),Industrial Tools,125,316,6.0,0.7,614,13,394.17
+2024-01-28,West Coast (Los Angeles),Automotive Parts,468,248,9.9,3.16,487,0,1289.05
+2024-01-28,East Port (Newark),Consumer Tech,485,345,8.0,3.13,408,0,952.99
+2024-01-28,East Port (Newark),Home Living,308,349,9.4,1.16,553,10,810.97
+2024-01-28,East Port (Newark),Industrial Tools,313,270,9.7,3.07,579,0,879.5
+2024-01-28,East Port (Newark),Automotive Parts,579,208,14.1,2.3,485,0,1754.41
+2024-01-28,South Hub (Dallas),Consumer Tech,1459,311,11.9,2.5,187,0,3075.47
+2024-01-28,South Hub (Dallas),Home Living,1104,325,12.5,2.91,606,0,3049.3
+2024-01-28,South Hub (Dallas),Industrial Tools,1194,287,9.8,0.72,700,0,2333.8
+2024-01-28,South Hub (Dallas),Automotive Parts,1319,307,12.0,2.1,653,0,3090.34
+2024-02-04,Hub Central (Chicago),Consumer Tech,1262,368,11.0,1.81,288,0,2892.55
+2024-02-04,Hub Central (Chicago),Home Living,521,273,8.9,0.44,239,0,1649.54
+2024-02-04,Hub Central (Chicago),Industrial Tools,344,245,13.1,3.79,546,0,1034.62
+2024-02-04,Hub Central (Chicago),Automotive Parts,1362,306,11.4,1.12,553,0,3226.09
+2024-02-04,West Coast (Los Angeles),Consumer Tech,663,325,11.9,2.63,219,0,2025.52
+2024-02-04,West Coast (Los Angeles),Home Living,1440,286,13.8,1.03,181,0,4166.14
+2024-02-04,West Coast (Los Angeles),Industrial Tools,1115,350,9.7,3.74,183,0,2851.21
+2024-02-04,West Coast (Los Angeles),Automotive Parts,305,318,6.6,2.15,440,24,763.29
+2024-02-04,East Port (Newark),Consumer Tech,884,272,7.9,0.44,267,0,2058.57
+2024-02-04,East Port (Newark),Home Living,870,218,11.1,3.39,796,0,1731.22
+2024-02-04,East Port (Newark),Industrial Tools,723,202,10.0,1.32,663,0,1637.83
+2024-02-04,East Port (Newark),Automotive Parts,634,392,12.0,1.39,358,0,1456.86
+2024-02-04,South Hub (Dallas),Consumer Tech,813,232,15.2,3.26,139,0,1903.3
+2024-02-04,South Hub (Dallas),Home Living,329,215,13.1,2.49,230,0,1022.57
+2024-02-04,South Hub (Dallas),Industrial Tools,1143,216,15.8,1.19,284,0,3032.82
+2024-02-04,South Hub (Dallas),Automotive Parts,1155,207,12.8,1.14,641,0,3065.69
+2024-02-11,Hub Central (Chicago),Consumer Tech,1129,204,14.3,1.79,582,0,3506.29
+2024-02-11,Hub Central (Chicago),Home Living,1413,307,11.4,1.4,170,0,2909.72
+2024-02-11,Hub Central (Chicago),Industrial Tools,961,280,12.3,2.83,190,0,2919.02
+2024-02-11,Hub Central (Chicago),Automotive Parts,1392,331,9.1,2.48,595,0,3298.41
+2024-02-11,West Coast (Los Angeles),Consumer Tech,863,232,14.3,3.63,114,0,1989.86
+2024-02-11,West Coast (Los Angeles),Home Living,327,259,13.0,3.78,496,0,813.19
+2024-02-11,West Coast (Los Angeles),Industrial Tools,619,332,16.4,1.98,708,0,1404.84
+2024-02-11,West Coast (Los Angeles),Automotive Parts,1116,270,13.0,1.58,304,0,3448.22
+2024-02-11,East Port (Newark),Consumer Tech,1410,225,18.0,0.35,779,0,3901.49
+2024-02-11,East Port (Newark),Home Living,298,347,15.8,2.19,379,30,763.09
+2024-02-11,East Port (Newark),Industrial Tools,555,247,13.8,3.46,379,0,1768.18
+2024-02-11,East Port (Newark),Automotive Parts,600,200,15.0,0.59,518,0,1145.91
+2024-02-11,South Hub (Dallas),Consumer Tech,777,209,12.0,1.53,312,0,2195.72
+2024-02-11,South Hub (Dallas),Home Living,1195,398,17.3,2.21,510,0,3735.67
+2024-02-11,South Hub (Dallas),Industrial Tools,1255,212,13.8,1.99,360,0,3633.75
+2024-02-11,South Hub (Dallas),Automotive Parts,507,353,10.7,1.51,761,0,1490.35
+2024-02-18,Hub Central (Chicago),Consumer Tech,1329,382,13.6,0.73,669,0,2848.28
+2024-02-18,Hub Central (Chicago),Home Living,1240,262,9.5,1.72,262,0,2310.7
+2024-02-18,Hub Central (Chicago),Industrial Tools,991,266,10.0,2.77,166,0,2935.98
+2024-02-18,Hub Central (Chicago),Automotive Parts,733,290,16.0,3.62,483,0,1575.56
+2024-02-18,West Coast (Los Angeles),Consumer Tech,1085,205,3.3,2.52,193,0,3031.31
+2024-02-18,West Coast (Los Angeles),Home Living,177,236,7.7,0.81,576,0,477.09
+2024-02-18,West Coast (Los Angeles),Industrial Tools,846,343,11.2,1.85,485,0,1728.96
+2024-02-18,West Coast (Los Angeles),Automotive Parts,835,245,10.3,2.08,561,0,1625.52
+2024-02-18,East Port (Newark),Consumer Tech,1305,329,14.5,3.28,182,0,3951.57
+2024-02-18,East Port (Newark),Home Living,658,247,14.9,0.73,772,0,1712.04
+2024-02-18,East Port (Newark),Industrial Tools,1424,341,9.1,0.46,437,0,2960.38
+2024-02-18,East Port (Newark),Automotive Parts,1498,303,12.8,2.14,302,0,3775.3
+2024-02-18,South Hub (Dallas),Consumer Tech,1015,352,11.3,2.15,386,0,2748.2
+2024-02-18,South Hub (Dallas),Home Living,615,291,15.0,0.97,128,0,1934.2
+2024-02-18,South Hub (Dallas),Industrial Tools,194,244,12.7,2.74,515,16,487.61
+2024-02-18,South Hub (Dallas),Automotive Parts,1055,340,12.7,1.22,128,0,3195.98
+2024-02-25,Hub Central (Chicago),Consumer Tech,1297,301,13.7,3.35,111,0,3270.82
+2024-02-25,Hub Central (Chicago),Home Living,1051,209,15.5,1.63,130,0,2394.99
+2024-02-25,Hub Central (Chicago),Industrial Tools,378,303,17.4,0.9,306,0,1204.07
+2024-02-25,Hub Central (Chicago),Automotive Parts,902,288,16.3,3.22,221,0,1988.61
+2024-02-25,West Coast (Los Angeles),Consumer Tech,315,235,8.1,1.07,421,0,964.08
+2024-02-25,West Coast (Los Angeles),Home Living,1136,259,8.5,0.87,778,0,2254.6
+2024-02-25,West Coast (Los Angeles),Industrial Tools,308,291,13.2,0.83,527,0,761.45
+2024-02-25,West Coast (Los Angeles),Automotive Parts,294,360,14.9,0.85,460,6,808.86
+2024-02-25,East Port (Newark),Consumer Tech,301,235,17.7,3.09,233,0,873.85
+2024-02-25,East Port (Newark),Home Living,809,365,14.8,1.17,527,0,2292.69
+2024-02-25,East Port (Newark),Industrial Tools,636,396,14.9,1.3,280,0,1438.89
+2024-02-25,East Port (Newark),Automotive Parts,1408,349,14.4,3.19,365,0,3650.89
+2024-02-25,South Hub (Dallas),Consumer Tech,1391,218,14.6,1.97,487,0,3999.94
+2024-02-25,South Hub (Dallas),Home Living,1238,373,13.7,3.18,390,0,3294.17
+2024-02-25,South Hub (Dallas),Industrial Tools,520,254,14.6,3.11,617,0,945.56
+2024-02-25,South Hub (Dallas),Automotive Parts,284,212,18.1,1.46,646,0,518.2
+2024-03-03,Hub Central (Chicago),Consumer Tech,1452,379,13.1,1.23,715,0,4347.18
+2024-03-03,Hub Central (Chicago),Home Living,162,347,11.8,3.27,169,0,380.53
+2024-03-03,Hub Central (Chicago),Industrial Tools,1357,303,18.5,1.35,781,0,4288.21
+2024-03-03,Hub Central (Chicago),Automotive Parts,1313,201,9.0,1.16,657,0,3266.53
+2024-03-03,West Coast (Los Angeles),Consumer Tech,1439,257,14.0,1.22,161,0,4219.83
+2024-03-03,West Coast (Los Angeles),Home Living,245,248,9.2,0.43,278,5,602.76
+2024-03-03,West Coast (Los Angeles),Industrial Tools,691,245,12.8,3.26,268,0,2034.5
+2024-03-03,West Coast (Los Angeles),Automotive Parts,388,307,9.8,0.61,196,0,792.57
+2024-03-03,East Port (Newark),Consumer Tech,667,280,17.5,3.63,495,0,1810.64
+2024-03-03,East Port (Newark),Home Living,479,290,10.6,3.51,521,0,998.66
+2024-03-03,East Port (Newark),Industrial Tools,176,349,11.9,0.99,175,14,560.83
+2024-03-03,East Port (Newark),Automotive Parts,959,210,12.7,1.9,359,0,2567.01
+2024-03-03,South Hub (Dallas),Consumer Tech,1327,215,9.8,0.52,675,0,3391.08
+2024-03-03,South Hub (Dallas),Home Living,581,288,18.8,1.66,279,0,1811.8
+2024-03-03,South Hub (Dallas),Industrial Tools,910,282,14.0,2.27,184,0,2293.08
+2024-03-03,South Hub (Dallas),Automotive Parts,124,275,13.0,0.36,780,5,224.56
+2024-03-10,Hub Central (Chicago),Consumer Tech,722,362,11.8,0.89,352,0,1564.6
+2024-03-10,Hub Central (Chicago),Home Living,1308,271,14.2,3.52,718,0,2653.14
+2024-03-10,Hub Central (Chicago),Industrial Tools,1427,397,14.0,3.49,494,0,4128.53
+2024-03-10,Hub Central (Chicago),Automotive Parts,1408,258,12.6,3.59,709,0,4355.46
+2024-03-10,West Coast (Los Angeles),Consumer Tech,276,361,7.0,2.48,402,9,643.93
+2024-03-10,West Coast (Los Angeles),Home Living,1493,319,11.6,0.28,773,0,3391.5
+2024-03-10,West Coast (Los Angeles),Industrial Tools,772,381,11.5,1.07,248,0,1504.56
+2024-03-10,West Coast (Los Angeles),Automotive Parts,799,208,13.1,1.73,494,0,1739.39
+2024-03-10,East Port (Newark),Consumer Tech,450,287,17.8,1.52,692,0,914.94
+2024-03-10,East Port (Newark),Home Living,1230,390,14.2,1.62,480,0,2444.53
+2024-03-10,East Port (Newark),Industrial Tools,767,305,13.6,0.31,342,0,2225.64
+2024-03-10,East Port (Newark),Automotive Parts,528,223,5.1,1.88,475,0,1495.2
+2024-03-10,South Hub (Dallas),Consumer Tech,564,305,15.6,1.62,337,0,1336.58
+2024-03-10,South Hub (Dallas),Home Living,1032,212,17.7,1.74,613,0,3252.05
+2024-03-10,South Hub (Dallas),Industrial Tools,484,393,14.7,2.73,312,0,1090.23
+2024-03-10,South Hub (Dallas),Automotive Parts,236,329,17.7,1.34,509,0,602.92
+2024-03-17,Hub Central (Chicago),Consumer Tech,142,352,9.2,1.14,191,9,401.49
+2024-03-17,Hub Central (Chicago),Home Living,711,350,12.5,0.77,364,0,1461.96
+2024-03-17,Hub Central (Chicago),Industrial Tools,1392,249,9.4,1.98,329,0,2837.18
+2024-03-17,Hub Central (Chicago),Automotive Parts,1431,338,13.1,1.35,132,0,2641.73
+2024-03-17,West Coast (Los Angeles),Consumer Tech,1254,320,17.2,2.44,380,0,2673.79
+2024-03-17,West Coast (Los Angeles),Home Living,1254,295,13.0,3.16,587,0,2963.69
+2024-03-17,West Coast (Los Angeles),Industrial Tools,404,378,14.0,1.18,176,0,928.98
+2024-03-17,West Coast (Los Angeles),Automotive Parts,416,273,13.1,1.63,315,0,1135.34
+2024-03-17,East Port (Newark),Consumer Tech,629,266,10.7,1.11,328,0,1595.21
+2024-03-17,East Port (Newark),Home Living,840,381,12.1,3.43,380,0,2071.75
+2024-03-17,East Port (Newark),Industrial Tools,1081,354,14.1,1.83,553,0,2967.93
+2024-03-17,East Port (Newark),Automotive Parts,1285,259,13.0,2.6,331,0,3573.21
+2024-03-17,South Hub (Dallas),Consumer Tech,1072,306,17.6,2.85,669,0,2232.62
+2024-03-17,South Hub (Dallas),Home Living,789,275,11.0,3.64,289,0,2432.01
+2024-03-17,South Hub (Dallas),Industrial Tools,994,317,13.3,3.1,544,0,2585.97
+2024-03-17,South Hub (Dallas),Automotive Parts,911,375,11.5,2.75,738,0,2590.15
+2024-03-24,Hub Central (Chicago),Consumer Tech,500,365,12.8,2.66,430,0,1071.38
+2024-03-24,Hub Central (Chicago),Home Living,1073,362,7.7,0.99,184,0,3038.68
+2024-03-24,Hub Central (Chicago),Industrial Tools,935,290,9.9,2.78,118,0,1851.55
+2024-03-24,Hub Central (Chicago),Automotive Parts,635,232,17.1,3.51,549,0,1193.24
+2024-03-24,West Coast (Los Angeles),Consumer Tech,744,377,12.0,3.56,223,0,2198.98
+2024-03-24,West Coast (Los Angeles),Home Living,1466,394,6.5,1.46,112,0,3437.72
+2024-03-24,West Coast (Los Angeles),Industrial Tools,1308,284,8.9,1.47,578,0,4155.99
+2024-03-24,West Coast (Los Angeles),Automotive Parts,476,351,12.6,1.19,524,0,1184.98
+2024-03-24,East Port (Newark),Consumer Tech,1449,310,14.8,3.12,245,0,3634.28
+2024-03-24,East Port (Newark),Home Living,1418,286,12.3,0.77,414,0,2721.57
+2024-03-24,East Port (Newark),Industrial Tools,842,389,7.1,0.54,361,0,1943.73
+2024-03-24,East Port (Newark),Automotive Parts,562,205,12.4,3.17,449,0,1469.99
+2024-03-24,South Hub (Dallas),Consumer Tech,288,217,11.8,2.06,618,0,919.56
+2024-03-24,South Hub (Dallas),Home Living,523,332,12.9,2.81,331,0,1518.4
+2024-03-24,South Hub (Dallas),Industrial Tools,1178,309,5.1,2.9,789,0,2224.41
+2024-03-24,South Hub (Dallas),Automotive Parts,1375,303,12.2,3.74,646,0,3132.49
+2024-03-31,Hub Central (Chicago),Consumer Tech,511,301,9.2,0.39,640,0,1306.05
+2024-03-31,Hub Central (Chicago),Home Living,1159,339,15.3,2.47,758,0,2114.79
+2024-03-31,Hub Central (Chicago),Industrial Tools,1166,389,10.5,1.76,404,0,2120.22
+2024-03-31,Hub Central (Chicago),Automotive Parts,1156,307,9.2,1.72,440,0,3265.05
+2024-03-31,West Coast (Los Angeles),Consumer Tech,1317,366,14.0,1.78,503,0,4152.86
+2024-03-31,West Coast (Los Angeles),Home Living,1380,395,15.2,2.32,466,0,2829.29
+2024-03-31,West Coast (Los Angeles),Industrial Tools,367,269,13.5,2.83,798,0,830.12
+2024-03-31,West Coast (Los Angeles),Automotive Parts,393,211,13.7,0.59,612,0,1251.19
+2024-03-31,East Port (Newark),Consumer Tech,583,220,16.4,1.01,338,0,1518.48
+2024-03-31,East Port (Newark),Home Living,997,228,8.6,2.97,496,0,1987.85
+2024-03-31,East Port (Newark),Industrial Tools,266,257,12.8,3.76,200,0,610.97
+2024-03-31,East Port (Newark),Automotive Parts,1056,234,14.6,3.15,687,0,2188.08
+2024-03-31,South Hub (Dallas),Consumer Tech,1096,275,9.5,0.39,257,0,2321.97
+2024-03-31,South Hub (Dallas),Home Living,1220,320,10.2,1.02,426,0,2365.59
+2024-03-31,South Hub (Dallas),Industrial Tools,989,306,16.4,3.19,632,0,2018.58
+2024-03-31,South Hub (Dallas),Automotive Parts,708,249,8.6,1.51,668,0,2052.17
+2024-04-07,Hub Central (Chicago),Consumer Tech,1308,263,11.4,0.25,495,0,2624.91
+2024-04-07,Hub Central (Chicago),Home Living,499,386,11.7,2.33,130,0,912.63
+2024-04-07,Hub Central (Chicago),Industrial Tools,121,360,13.7,1.4,303,22,238.11
+2024-04-07,Hub Central (Chicago),Automotive Parts,1173,258,10.7,3.19,341,0,3527.7
+2024-04-07,West Coast (Los Angeles),Consumer Tech,1027,359,18.0,2.96,552,0,2653.64
+2024-04-07,West Coast (Los Angeles),Home Living,1176,351,16.3,2.57,389,0,2264.45
+2024-04-07,West Coast (Los Angeles),Industrial Tools,697,220,12.7,0.82,681,0,1868.49
+2024-04-07,West Coast (Los Angeles),Automotive Parts,365,266,15.4,0.74,438,0,781.87
+2024-04-07,East Port (Newark),Consumer Tech,1113,238,15.6,3.62,356,0,2799.69
+2024-04-07,East Port (Newark),Home Living,549,265,12.5,0.37,656,0,1625.1
+2024-04-07,East Port (Newark),Industrial Tools,373,216,15.4,2.19,355,0,850.38
+2024-04-07,East Port (Newark),Automotive Parts,620,229,12.7,0.25,758,0,1594.73
+2024-04-07,South Hub (Dallas),Consumer Tech,171,205,10.2,1.07,450,15,481.93
+2024-04-07,South Hub (Dallas),Home Living,333,267,18.5,1.23,426,0,808.32
+2024-04-07,South Hub (Dallas),Industrial Tools,642,252,11.4,2.95,324,0,1205.63
+2024-04-07,South Hub (Dallas),Automotive Parts,592,275,9.2,1.36,640,0,1262.16
+2024-04-14,Hub Central (Chicago),Consumer Tech,988,309,9.9,1.13,670,0,3006.0
+2024-04-14,Hub Central (Chicago),Home Living,1443,363,14.3,1.33,412,0,4171.33
+2024-04-14,Hub Central (Chicago),Industrial Tools,323,298,9.1,1.6,674,0,716.13
+2024-04-14,Hub Central (Chicago),Automotive Parts,1134,238,6.1,0.93,549,0,2904.87
+2024-04-14,West Coast (Los Angeles),Consumer Tech,1188,287,10.4,3.55,539,0,3559.49
+2024-04-14,West Coast (Los Angeles),Home Living,420,370,15.2,3.64,454,0,1012.49
+2024-04-14,West Coast (Los Angeles),Industrial Tools,145,282,12.5,0.72,162,9,281.38
+2024-04-14,West Coast (Los Angeles),Automotive Parts,880,328,9.6,1.36,776,0,2744.17
+2024-04-14,East Port (Newark),Consumer Tech,1366,321,11.2,0.75,699,0,3565.54
+2024-04-14,East Port (Newark),Home Living,1057,246,17.2,2.54,623,0,2667.65
+2024-04-14,East Port (Newark),Industrial Tools,541,381,14.9,2.57,733,0,1260.37
+2024-04-14,East Port (Newark),Automotive Parts,1133,359,9.8,2.0,153,0,2301.36
+2024-04-14,South Hub (Dallas),Consumer Tech,1388,348,14.7,1.01,115,0,2660.61
+2024-04-14,South Hub (Dallas),Home Living,248,315,14.0,1.55,703,32,644.81
+2024-04-14,South Hub (Dallas),Industrial Tools,1095,280,10.2,0.38,198,0,2442.0
+2024-04-14,South Hub (Dallas),Automotive Parts,290,347,12.4,0.5,229,14,859.39
+2024-04-21,Hub Central (Chicago),Consumer Tech,349,359,12.3,3.67,285,16,963.66
+2024-04-21,Hub Central (Chicago),Home Living,1271,294,9.7,3.47,568,0,2953.48
+2024-04-21,Hub Central (Chicago),Industrial Tools,851,344,14.3,0.24,668,0,2254.68
+2024-04-21,Hub Central (Chicago),Automotive Parts,434,391,14.6,1.73,170,0,892.65
+2024-04-21,West Coast (Los Angeles),Consumer Tech,1241,243,11.3,3.44,122,0,3001.78
+2024-04-21,West Coast (Los Angeles),Home Living,211,212,13.8,0.32,681,34,398.24
+2024-04-21,West Coast (Los Angeles),Industrial Tools,1085,220,14.1,0.87,634,0,3020.95
+2024-04-21,West Coast (Los Angeles),Automotive Parts,620,249,8.7,3.1,191,0,1953.5
+2024-04-21,East Port (Newark),Consumer Tech,458,252,12.0,1.34,103,0,1007.27
+2024-04-21,East Port (Newark),Home Living,1433,272,17.0,2.95,362,0,3735.34
+2024-04-21,East Port (Newark),Industrial Tools,322,290,15.8,2.39,692,0,790.66
+2024-04-21,East Port (Newark),Automotive Parts,482,244,13.0,2.13,357,0,1414.48
+2024-04-21,South Hub (Dallas),Consumer Tech,156,372,13.5,0.66,731,25,313.1
+2024-04-21,South Hub (Dallas),Home Living,388,331,11.6,2.53,665,0,984.1
+2024-04-21,South Hub (Dallas),Industrial Tools,700,367,13.2,1.54,711,0,1989.32
+2024-04-21,South Hub (Dallas),Automotive Parts,648,248,9.6,2.17,177,0,1309.78
+2024-04-28,Hub Central (Chicago),Consumer Tech,1008,212,12.0,3.08,533,0,3093.7
+2024-04-28,Hub Central (Chicago),Home Living,331,308,7.2,1.62,383,0,782.03
+2024-04-28,Hub Central (Chicago),Industrial Tools,1368,317,13.8,1.33,590,0,3722.07
+2024-04-28,Hub Central (Chicago),Automotive Parts,920,266,11.8,2.62,397,0,1940.73
+2024-04-28,West Coast (Los Angeles),Consumer Tech,934,234,13.0,3.75,347,0,2637.23
+2024-04-28,West Coast (Los Angeles),Home Living,942,297,13.1,2.17,287,0,2589.98
+2024-04-28,West Coast (Los Angeles),Industrial Tools,1342,333,15.4,0.38,650,0,2875.83
+2024-04-28,West Coast (Los Angeles),Automotive Parts,1153,202,11.4,0.52,761,0,2659.43
+2024-04-28,East Port (Newark),Consumer Tech,1240,218,12.6,2.65,187,0,3803.25
+2024-04-28,East Port (Newark),Home Living,775,343,9.2,2.87,151,0,1800.5
+2024-04-28,East Port (Newark),Industrial Tools,160,247,13.0,2.93,203,20,487.08
+2024-04-28,East Port (Newark),Automotive Parts,162,287,9.4,2.81,313,11,354.63
+2024-04-28,South Hub (Dallas),Consumer Tech,528,240,17.4,2.78,629,0,1187.01
+2024-04-28,South Hub (Dallas),Home Living,281,254,15.6,2.51,647,0,805.18
+2024-04-28,South Hub (Dallas),Industrial Tools,171,218,10.4,1.88,710,13,364.41
+2024-04-28,South Hub (Dallas),Automotive Parts,1287,398,6.2,0.52,655,0,3725.34
+2024-05-05,Hub Central (Chicago),Consumer Tech,820,382,13.6,2.3,465,0,2213.81
+2024-05-05,Hub Central (Chicago),Home Living,1382,311,15.2,0.82,495,0,3590.33
+2024-05-05,Hub Central (Chicago),Industrial Tools,1218,297,13.3,2.61,469,0,2628.32
+2024-05-05,Hub Central (Chicago),Automotive Parts,428,316,14.6,1.56,338,0,1185.88
+2024-05-05,West Coast (Los Angeles),Consumer Tech,469,386,12.0,1.95,687,0,1325.28
+2024-05-05,West Coast (Los Angeles),Home Living,407,207,10.8,0.56,222,0,905.74
+2024-05-05,West Coast (Los Angeles),Industrial Tools,1286,357,9.0,2.77,509,0,2872.97
+2024-05-05,West Coast (Los Angeles),Automotive Parts,965,394,12.4,2.57,395,0,1775.62
+2024-05-05,East Port (Newark),Consumer Tech,1189,306,17.0,1.57,519,0,2956.19
+2024-05-05,East Port (Newark),Home Living,692,367,8.5,2.69,675,0,1498.13
+2024-05-05,East Port (Newark),Industrial Tools,596,202,12.1,3.0,632,0,1593.23
+2024-05-05,East Port (Newark),Automotive Parts,1403,340,13.4,0.89,449,0,3556.12
+2024-05-05,South Hub (Dallas),Consumer Tech,249,224,12.3,0.64,468,0,661.27
+2024-05-05,South Hub (Dallas),Home Living,1001,218,15.1,1.2,233,0,1970.7
+2024-05-05,South Hub (Dallas),Industrial Tools,766,244,8.2,2.86,449,0,2347.76
+2024-05-05,South Hub (Dallas),Automotive Parts,238,246,14.8,3.52,662,6,663.8
+2024-05-12,Hub Central (Chicago),Consumer Tech,619,221,5.0,3.3,143,0,1594.91
+2024-05-12,Hub Central (Chicago),Home Living,1273,216,9.6,1.5,721,0,3500.8
+2024-05-12,Hub Central (Chicago),Industrial Tools,467,353,15.5,1.15,460,0,887.3
+2024-05-12,Hub Central (Chicago),Automotive Parts,216,250,9.9,2.72,120,18,393.77
+2024-05-12,West Coast (Los Angeles),Consumer Tech,1089,380,17.4,3.52,202,0,3101.69
+2024-05-12,West Coast (Los Angeles),Home Living,1273,333,12.1,3.25,711,0,3401.6
+2024-05-12,West Coast (Los Angeles),Industrial Tools,171,248,7.4,2.0,543,27,420.11
+2024-05-12,West Coast (Los Angeles),Automotive Parts,923,347,13.9,2.88,696,0,2387.42
+2024-05-12,East Port (Newark),Consumer Tech,438,266,17.7,1.88,397,0,819.43
+2024-05-12,East Port (Newark),Home Living,248,314,10.4,2.41,391,7,524.06
+2024-05-12,East Port (Newark),Industrial Tools,148,378,14.1,3.46,291,0,449.6
+2024-05-12,East Port (Newark),Automotive Parts,436,288,9.7,2.75,436,0,1212.49
+2024-05-12,South Hub (Dallas),Consumer Tech,434,366,13.8,3.63,718,0,970.88
+2024-05-12,South Hub (Dallas),Home Living,1220,226,13.9,0.94,171,0,3674.93
+2024-05-12,South Hub (Dallas),Industrial Tools,1420,314,11.8,0.65,227,0,4094.06
+2024-05-12,South Hub (Dallas),Automotive Parts,451,234,11.9,0.75,391,0,1187.37
+2024-05-19,Hub Central (Chicago),Consumer Tech,850,255,12.6,2.69,501,0,1757.11
+2024-05-19,Hub Central (Chicago),Home Living,1475,399,9.1,2.52,497,0,2821.87
+2024-05-19,Hub Central (Chicago),Industrial Tools,1173,255,13.0,2.83,601,0,2203.58
+2024-05-19,Hub Central (Chicago),Automotive Parts,1052,329,14.8,1.96,547,0,1998.21
+2024-05-19,West Coast (Los Angeles),Consumer Tech,674,381,11.4,0.65,607,0,2086.66
+2024-05-19,West Coast (Los Angeles),Home Living,504,399,10.9,2.02,727,0,1541.26
+2024-05-19,West Coast (Los Angeles),Industrial Tools,773,318,16.5,3.18,244,0,1953.42
+2024-05-19,West Coast (Los Angeles),Automotive Parts,819,309,14.6,1.2,380,0,1854.99
+2024-05-19,East Port (Newark),Consumer Tech,632,327,11.7,3.61,498,0,1354.38
+2024-05-19,East Port (Newark),Home Living,514,383,10.6,0.44,240,0,1183.27
+2024-05-19,East Port (Newark),Industrial Tools,840,249,13.1,3.44,695,0,2318.36
+2024-05-19,East Port (Newark),Automotive Parts,127,223,16.6,0.41,132,20,369.73
+2024-05-19,South Hub (Dallas),Consumer Tech,981,236,7.6,2.78,133,0,3067.58
+2024-05-19,South Hub (Dallas),Home Living,1380,252,10.1,0.74,403,0,3064.53
+2024-05-19,South Hub (Dallas),Industrial Tools,1366,395,12.4,3.05,628,0,2800.8
+2024-05-19,South Hub (Dallas),Automotive Parts,351,301,8.2,2.98,278,0,1068.33
+2024-05-26,Hub Central (Chicago),Consumer Tech,1049,215,10.8,2.6,393,0,2011.71
+2024-05-26,Hub Central (Chicago),Home Living,1175,206,17.3,1.4,699,0,2405.97
+2024-05-26,Hub Central (Chicago),Industrial Tools,1404,381,8.3,3.59,121,0,3128.88
+2024-05-26,Hub Central (Chicago),Automotive Parts,285,318,6.7,2.61,134,27,816.76
+2024-05-26,West Coast (Los Angeles),Consumer Tech,437,286,11.7,3.02,672,0,854.82
+2024-05-26,West Coast (Los Angeles),Home Living,401,362,18.2,3.61,290,0,1159.73
+2024-05-26,West Coast (Los Angeles),Industrial Tools,161,372,17.7,0.77,264,6,412.21
+2024-05-26,West Coast (Los Angeles),Automotive Parts,1106,257,11.9,3.78,762,0,3384.84
+2024-05-26,East Port (Newark),Consumer Tech,338,208,16.1,0.37,112,0,775.79
+2024-05-26,East Port (Newark),Home Living,1089,377,12.2,1.68,283,0,2752.65
+2024-05-26,East Port (Newark),Industrial Tools,647,243,11.0,1.27,340,0,1853.89
+2024-05-26,East Port (Newark),Automotive Parts,1021,217,14.4,0.92,714,0,2863.87
+2024-05-26,South Hub (Dallas),Consumer Tech,877,325,12.0,2.0,237,0,2145.87
+2024-05-26,South Hub (Dallas),Home Living,1478,292,8.7,3.45,498,0,3730.7
+2024-05-26,South Hub (Dallas),Industrial Tools,721,249,14.6,3.37,648,0,1940.41
+2024-05-26,South Hub (Dallas),Automotive Parts,578,303,8.7,1.68,562,0,1369.53
+2024-06-02,Hub Central (Chicago),Consumer Tech,773,242,13.6,3.51,591,0,1912.55
+2024-06-02,Hub Central (Chicago),Home Living,1402,303,14.4,2.74,195,0,4253.16
+2024-06-02,Hub Central (Chicago),Industrial Tools,1279,315,8.7,1.2,501,0,2805.27
+2024-06-02,Hub Central (Chicago),Automotive Parts,567,201,16.5,2.55,210,0,1131.94
+2024-06-02,West Coast (Los Angeles),Consumer Tech,132,206,8.5,0.55,299,26,248.67
+2024-06-02,West Coast (Los Angeles),Home Living,596,326,12.3,1.13,791,0,1779.82
+2024-06-02,West Coast (Los Angeles),Industrial Tools,453,305,11.7,3.29,717,0,1097.49
+2024-06-02,West Coast (Los Angeles),Automotive Parts,535,395,12.2,2.66,426,0,1018.39
+2024-06-02,East Port (Newark),Consumer Tech,466,236,13.3,2.52,763,0,844.82
+2024-06-02,East Port (Newark),Home Living,655,228,8.7,1.71,757,0,1328.98
+2024-06-02,East Port (Newark),Industrial Tools,1260,331,14.1,1.44,790,0,2629.08
+2024-06-02,East Port (Newark),Automotive Parts,1419,394,12.4,1.15,669,0,4431.42
+2024-06-02,South Hub (Dallas),Consumer Tech,199,386,14.2,1.9,615,27,564.85
+2024-06-02,South Hub (Dallas),Home Living,1116,243,14.1,2.39,529,0,3487.33
+2024-06-02,South Hub (Dallas),Industrial Tools,1477,349,10.5,0.23,616,0,2667.64
+2024-06-02,South Hub (Dallas),Automotive Parts,946,281,16.9,1.11,510,0,1782.72
+2024-06-09,Hub Central (Chicago),Consumer Tech,557,214,13.4,3.43,171,0,1040.44
+2024-06-09,Hub Central (Chicago),Home Living,1147,293,9.1,0.8,165,0,3160.67
+2024-06-09,Hub Central (Chicago),Industrial Tools,466,279,11.3,1.75,618,0,1450.22
+2024-06-09,Hub Central (Chicago),Automotive Parts,1096,211,12.1,2.96,561,0,3244.61
+2024-06-09,West Coast (Los Angeles),Consumer Tech,692,396,15.5,2.11,201,0,2112.96
+2024-06-09,West Coast (Los Angeles),Home Living,571,291,10.8,1.0,240,0,1239.63
+2024-06-09,West Coast (Los Angeles),Industrial Tools,419,282,13.0,0.59,691,0,993.33
+2024-06-09,West Coast (Los Angeles),Automotive Parts,1033,381,14.3,2.01,465,0,2371.54
+2024-06-09,East Port (Newark),Consumer Tech,1125,365,11.6,3.73,127,0,2813.61
+2024-06-09,East Port (Newark),Home Living,964,370,5.3,1.5,189,0,2107.67
+2024-06-09,East Port (Newark),Industrial Tools,150,260,14.2,2.2,569,20,446.2
+2024-06-09,East Port (Newark),Automotive Parts,1334,300,14.9,3.43,167,0,3232.8
+2024-06-09,South Hub (Dallas),Consumer Tech,993,303,13.3,1.68,343,0,2211.4
+2024-06-09,South Hub (Dallas),Home Living,1162,339,12.7,1.19,467,0,2528.12
+2024-06-09,South Hub (Dallas),Industrial Tools,676,301,14.0,2.51,202,0,1745.84
+2024-06-09,South Hub (Dallas),Automotive Parts,905,382,12.2,0.88,498,0,2325.02
+2024-06-16,Hub Central (Chicago),Consumer Tech,774,380,17.5,0.6,596,0,2121.9
+2024-06-16,Hub Central (Chicago),Home Living,937,259,12.6,0.86,158,0,1945.81
+2024-06-16,Hub Central (Chicago),Industrial Tools,322,239,10.0,2.19,417,0,716.68
+2024-06-16,Hub Central (Chicago),Automotive Parts,1023,250,18.3,1.1,519,0,2390.67
+2024-06-16,West Coast (Los Angeles),Consumer Tech,928,248,14.0,3.45,177,0,2009.35
+2024-06-16,West Coast (Los Angeles),Home Living,973,375,14.5,1.85,671,0,2357.01
+2024-06-16,West Coast (Los Angeles),Industrial Tools,373,207,14.9,1.58,389,0,989.11
+2024-06-16,West Coast (Los Angeles),Automotive Parts,831,221,11.8,2.84,201,0,2019.97
+2024-06-16,East Port (Newark),Consumer Tech,778,204,17.0,3.19,505,0,2014.61
+2024-06-16,East Port (Newark),Home Living,1174,370,13.3,1.37,577,0,2872.28
+2024-06-16,East Port (Newark),Industrial Tools,410,310,11.8,3.28,361,0,984.21
+2024-06-16,East Port (Newark),Automotive Parts,274,268,12.1,2.1,134,0,655.07
+2024-06-16,South Hub (Dallas),Consumer Tech,774,359,10.6,3.12,326,0,1533.58
+2024-06-16,South Hub (Dallas),Home Living,1453,279,17.5,1.83,304,0,3034.78
+2024-06-16,South Hub (Dallas),Industrial Tools,705,356,9.5,2.01,231,0,2210.81
+2024-06-16,South Hub (Dallas),Automotive Parts,323,230,10.5,2.92,596,0,665.67
+2024-06-23,Hub Central (Chicago),Consumer Tech,1401,235,17.0,1.93,274,0,3272.91
+2024-06-23,Hub Central (Chicago),Home Living,988,245,13.4,2.85,404,0,1802.79
+2024-06-23,Hub Central (Chicago),Industrial Tools,689,290,15.7,1.67,352,0,1381.88
+2024-06-23,Hub Central (Chicago),Automotive Parts,640,212,13.4,0.34,492,0,1734.29
+2024-06-23,West Coast (Los Angeles),Consumer Tech,1472,315,17.6,2.09,682,0,4535.35
+2024-06-23,West Coast (Los Angeles),Home Living,139,280,13.7,0.32,445,12,287.43
+2024-06-23,West Coast (Los Angeles),Industrial Tools,1008,291,11.0,1.23,246,0,2145.15
+2024-06-23,West Coast (Los Angeles),Automotive Parts,549,279,14.4,2.22,339,0,1239.2
+2024-06-23,East Port (Newark),Consumer Tech,819,338,11.7,3.38,660,0,2203.04
+2024-06-23,East Port (Newark),Home Living,179,232,13.9,1.05,382,27,520.31
+2024-06-23,East Port (Newark),Industrial Tools,678,292,11.9,0.81,126,0,2123.47
+2024-06-23,East Port (Newark),Automotive Parts,264,274,12.2,3.29,220,19,741.64
+2024-06-23,South Hub (Dallas),Consumer Tech,446,334,13.9,2.85,183,0,903.07
+2024-06-23,South Hub (Dallas),Home Living,1314,277,11.9,2.82,668,0,2986.15
+2024-06-23,South Hub (Dallas),Industrial Tools,466,351,11.1,0.29,713,0,1481.85
+2024-06-23,South Hub (Dallas),Automotive Parts,290,327,12.0,3.67,343,16,678.94
+2024-06-30,Hub Central (Chicago),Consumer Tech,409,206,9.6,1.23,299,0,894.0
+2024-06-30,Hub Central (Chicago),Home Living,359,315,12.3,3.45,682,0,899.42
+2024-06-30,Hub Central (Chicago),Industrial Tools,840,303,11.4,2.36,774,0,2269.96
+2024-06-30,Hub Central (Chicago),Automotive Parts,1383,357,8.8,3.63,696,0,3748.25
+2024-06-30,West Coast (Los Angeles),Consumer Tech,601,255,17.3,3.79,446,0,1852.42
+2024-06-30,West Coast (Los Angeles),Home Living,358,340,14.5,0.86,378,0,1056.18
+2024-06-30,West Coast (Los Angeles),Industrial Tools,1011,236,10.2,0.41,794,0,2643.24
+2024-06-30,West Coast (Los Angeles),Automotive Parts,384,331,11.2,1.42,318,0,1206.28
+2024-06-30,East Port (Newark),Consumer Tech,624,243,9.8,0.34,286,0,1412.28
+2024-06-30,East Port (Newark),Home Living,375,378,15.1,2.75,277,19,825.48
+2024-06-30,East Port (Newark),Industrial Tools,887,365,16.3,2.32,177,0,2629.82
+2024-06-30,East Port (Newark),Automotive Parts,997,395,12.3,1.35,308,0,2421.92
+2024-06-30,South Hub (Dallas),Consumer Tech,1447,398,12.6,3.04,252,0,4242.95
+2024-06-30,South Hub (Dallas),Home Living,1407,309,14.0,1.46,126,0,3650.09
+2024-06-30,South Hub (Dallas),Industrial Tools,1073,257,14.1,2.25,711,0,2623.63
+2024-06-30,South Hub (Dallas),Automotive Parts,922,293,12.4,2.09,773,0,2101.24
+2024-07-07,Hub Central (Chicago),Consumer Tech,343,324,11.6,0.39,302,0,662.47
+2024-07-07,Hub Central (Chicago),Home Living,690,388,12.0,2.11,678,0,2088.61
+2024-07-07,Hub Central (Chicago),Industrial Tools,1196,379,13.7,1.98,153,0,2615.89
+2024-07-07,Hub Central (Chicago),Automotive Parts,463,368,11.2,1.8,511,0,1335.63
+2024-07-07,West Coast (Los Angeles),Consumer Tech,318,360,10.2,0.3,573,8,985.06
+2024-07-07,West Coast (Los Angeles),Home Living,1215,367,8.4,1.59,135,0,2919.69
+2024-07-07,West Coast (Los Angeles),Industrial Tools,1342,315,7.8,1.16,233,0,3586.58
+2024-07-07,West Coast (Los Angeles),Automotive Parts,952,330,12.3,1.61,520,0,2622.8
+2024-07-07,East Port (Newark),Consumer Tech,408,336,11.2,2.98,278,0,1086.96
+2024-07-07,East Port (Newark),Home Living,1307,320,10.0,2.75,696,0,3083.13
+2024-07-07,East Port (Newark),Industrial Tools,593,372,9.4,3.71,654,0,1094.21
+2024-07-07,East Port (Newark),Automotive Parts,736,396,11.4,0.47,363,0,2075.55
+2024-07-07,South Hub (Dallas),Consumer Tech,680,295,9.9,2.51,469,0,2174.12
+2024-07-07,South Hub (Dallas),Home Living,1131,298,15.0,0.89,584,0,3574.62
+2024-07-07,South Hub (Dallas),Industrial Tools,228,291,7.2,3.56,636,15,589.37
+2024-07-07,South Hub (Dallas),Automotive Parts,1151,323,7.7,3.41,561,0,2321.4
+2024-07-14,Hub Central (Chicago),Consumer Tech,533,202,10.4,3.8,110,0,1283.95
+2024-07-14,Hub Central (Chicago),Home Living,1393,339,7.3,0.2,401,0,3196.63
+2024-07-14,Hub Central (Chicago),Industrial Tools,1334,206,8.2,1.33,549,0,3426.12
+2024-07-14,Hub Central (Chicago),Automotive Parts,1302,296,15.5,3.24,702,0,2686.33
+2024-07-14,West Coast (Los Angeles),Consumer Tech,1403,388,15.4,1.67,588,0,3871.54
+2024-07-14,West Coast (Los Angeles),Home Living,299,362,16.0,2.87,688,7,660.21
+2024-07-14,West Coast (Los Angeles),Industrial Tools,680,380,16.3,0.97,769,0,2163.81
+2024-07-14,West Coast (Los Angeles),Automotive Parts,182,327,12.8,2.78,350,5,441.33
+2024-07-14,East Port (Newark),Consumer Tech,437,330,11.5,0.2,235,0,1016.14
+2024-07-14,East Port (Newark),Home Living,1262,337,10.8,2.77,486,0,2290.57
+2024-07-14,East Port (Newark),Industrial Tools,692,331,7.5,1.8,368,0,1672.51
+2024-07-14,East Port (Newark),Automotive Parts,557,250,9.6,1.46,773,0,1697.26
+2024-07-14,South Hub (Dallas),Consumer Tech,743,396,15.6,1.93,662,0,2265.23
+2024-07-14,South Hub (Dallas),Home Living,1241,354,11.0,2.79,661,0,3024.02
+2024-07-14,South Hub (Dallas),Industrial Tools,523,219,13.2,0.89,637,0,1113.02
+2024-07-14,South Hub (Dallas),Automotive Parts,713,304,14.2,1.96,145,0,1797.77
+2024-07-21,Hub Central (Chicago),Consumer Tech,174,277,9.2,2.85,371,16,496.77
+2024-07-21,Hub Central (Chicago),Home Living,707,361,14.6,0.76,593,0,1828.3
+2024-07-21,Hub Central (Chicago),Industrial Tools,1206,304,12.3,1.75,293,0,2519.11
+2024-07-21,Hub Central (Chicago),Automotive Parts,974,230,12.0,3.58,667,0,2443.38
+2024-07-21,West Coast (Los Angeles),Consumer Tech,268,230,8.3,0.57,406,0,511.81
+2024-07-21,West Coast (Los Angeles),Home Living,1017,205,11.7,1.54,443,0,2265.42
+2024-07-21,West Coast (Los Angeles),Industrial Tools,380,305,10.3,1.85,681,0,835.39
+2024-07-21,West Coast (Los Angeles),Automotive Parts,514,202,10.6,0.87,731,0,1063.14
+2024-07-21,East Port (Newark),Consumer Tech,647,230,14.4,3.79,526,0,1624.5
+2024-07-21,East Port (Newark),Home Living,1260,288,16.1,2.32,221,0,2501.82
+2024-07-21,East Port (Newark),Industrial Tools,152,290,9.8,3.41,424,7,460.23
+2024-07-21,East Port (Newark),Automotive Parts,1162,229,12.9,0.73,689,0,2793.05
+2024-07-21,South Hub (Dallas),Consumer Tech,1350,234,15.6,3.77,512,0,3440.92
+2024-07-21,South Hub (Dallas),Home Living,1101,222,15.3,3.33,147,0,3247.68
+2024-07-21,South Hub (Dallas),Industrial Tools,1108,325,11.5,1.54,125,0,2584.89
+2024-07-21,South Hub (Dallas),Automotive Parts,880,205,8.8,0.81,645,0,2653.27
+2024-07-28,Hub Central (Chicago),Consumer Tech,1481,317,11.8,0.69,748,0,2672.63
+2024-07-28,Hub Central (Chicago),Home Living,1341,317,8.9,0.62,100,0,3571.14
+2024-07-28,Hub Central (Chicago),Industrial Tools,776,311,9.9,0.55,693,0,1428.91
+2024-07-28,Hub Central (Chicago),Automotive Parts,626,298,10.8,0.43,615,0,1275.74
+2024-07-28,West Coast (Los Angeles),Consumer Tech,1084,224,15.3,3.6,623,0,2005.6
+2024-07-28,West Coast (Los Angeles),Home Living,847,262,10.2,2.28,441,0,1923.88
+2024-07-28,West Coast (Los Angeles),Industrial Tools,797,396,10.8,1.61,540,0,1871.7
+2024-07-28,West Coast (Los Angeles),Automotive Parts,654,318,12.3,1.38,398,0,1532.67
+2024-07-28,East Port (Newark),Consumer Tech,219,323,9.6,0.58,224,16,479.42
+2024-07-28,East Port (Newark),Home Living,602,374,7.7,1.38,652,0,1228.99
+2024-07-28,East Port (Newark),Industrial Tools,759,341,16.3,2.83,636,0,1894.75
+2024-07-28,East Port (Newark),Automotive Parts,807,234,11.5,1.72,767,0,2123.98
+2024-07-28,South Hub (Dallas),Consumer Tech,1326,312,6.6,2.13,664,0,3945.44
+2024-07-28,South Hub (Dallas),Home Living,191,323,8.3,0.61,200,8,500.4
+2024-07-28,South Hub (Dallas),Industrial Tools,240,309,11.2,1.98,151,36,537.9
+2024-07-28,South Hub (Dallas),Automotive Parts,1337,380,12.9,2.63,498,0,2952.39
+2024-08-04,Hub Central (Chicago),Consumer Tech,585,350,8.0,0.56,165,0,1352.21
+2024-08-04,Hub Central (Chicago),Home Living,591,366,7.1,3.54,442,0,1748.34
+2024-08-04,Hub Central (Chicago),Industrial Tools,1327,358,4.8,2.07,738,0,3545.43
+2024-08-04,Hub Central (Chicago),Automotive Parts,1175,357,13.3,1.19,342,0,3024.2
+2024-08-04,West Coast (Los Angeles),Consumer Tech,200,343,9.3,2.04,521,17,376.91
+2024-08-04,West Coast (Los Angeles),Home Living,202,254,13.8,0.93,126,22,416.81
+2024-08-04,West Coast (Los Angeles),Industrial Tools,1100,343,12.2,2.03,385,0,2361.38
+2024-08-04,West Coast (Los Angeles),Automotive Parts,1147,265,11.7,2.46,601,0,2912.7
+2024-08-04,East Port (Newark),Consumer Tech,1372,299,10.3,1.1,603,0,3077.54
+2024-08-04,East Port (Newark),Home Living,1050,262,17.4,3.55,361,0,2421.34
+2024-08-04,East Port (Newark),Industrial Tools,917,200,13.9,2.04,137,0,2513.87
+2024-08-04,East Port (Newark),Automotive Parts,1017,252,11.6,0.88,551,0,2796.69
+2024-08-04,South Hub (Dallas),Consumer Tech,1280,315,9.7,2.45,538,0,4079.38
+2024-08-04,South Hub (Dallas),Home Living,649,244,7.3,2.99,191,0,1372.93
+2024-08-04,South Hub (Dallas),Industrial Tools,1478,356,7.7,3.62,768,0,3293.57
+2024-08-04,South Hub (Dallas),Automotive Parts,297,254,18.0,0.5,190,0,648.25
+2024-08-11,Hub Central (Chicago),Consumer Tech,288,338,17.5,2.32,461,29,814.21
+2024-08-11,Hub Central (Chicago),Home Living,257,227,14.2,1.5,366,0,697.88
+2024-08-11,Hub Central (Chicago),Industrial Tools,679,337,14.7,2.74,146,0,2028.11
+2024-08-11,Hub Central (Chicago),Automotive Parts,487,205,10.5,0.22,519,0,1126.4
+2024-08-11,West Coast (Los Angeles),Consumer Tech,617,274,10.3,2.77,738,0,1771.62
+2024-08-11,West Coast (Los Angeles),Home Living,649,288,11.7,3.17,565,0,1847.53
+2024-08-11,West Coast (Los Angeles),Industrial Tools,482,298,12.5,0.76,798,0,1333.37
+2024-08-11,West Coast (Los Angeles),Automotive Parts,252,213,13.0,1.17,544,0,631.25
+2024-08-11,East Port (Newark),Consumer Tech,531,362,10.5,0.98,230,0,1063.48
+2024-08-11,East Port (Newark),Home Living,1342,336,7.1,0.89,131,0,3890.03
+2024-08-11,East Port (Newark),Industrial Tools,1076,218,8.8,1.13,662,0,2065.82
+2024-08-11,East Port (Newark),Automotive Parts,360,329,3.4,0.83,551,0,818.84
+2024-08-11,South Hub (Dallas),Consumer Tech,1144,288,13.2,2.29,698,0,3532.98
+2024-08-11,South Hub (Dallas),Home Living,1262,331,13.2,3.62,318,0,2579.14
+2024-08-11,South Hub (Dallas),Industrial Tools,846,394,11.3,2.86,617,0,1815.59
+2024-08-11,South Hub (Dallas),Automotive Parts,621,257,10.5,0.8,469,0,1362.85
+2024-08-18,Hub Central (Chicago),Consumer Tech,1002,362,15.4,3.16,295,0,2334.56
+2024-08-18,Hub Central (Chicago),Home Living,1054,348,16.8,3.63,580,0,2096.86
+2024-08-18,Hub Central (Chicago),Industrial Tools,904,312,3.9,2.98,611,0,2688.15
+2024-08-18,Hub Central (Chicago),Automotive Parts,642,340,13.7,0.49,377,0,1967.2
+2024-08-18,West Coast (Los Angeles),Consumer Tech,897,282,9.2,2.19,682,0,1957.69
+2024-08-18,West Coast (Los Angeles),Home Living,1276,371,8.8,3.13,299,0,3849.18
+2024-08-18,West Coast (Los Angeles),Industrial Tools,1362,248,15.5,3.33,400,0,2585.29
+2024-08-18,West Coast (Los Angeles),Automotive Parts,707,257,16.9,1.26,227,0,1934.49
+2024-08-18,East Port (Newark),Consumer Tech,1477,235,12.7,3.61,329,0,3147.93
+2024-08-18,East Port (Newark),Home Living,1267,287,16.5,0.52,666,0,2383.22
+2024-08-18,East Port (Newark),Industrial Tools,1480,349,13.3,0.77,465,0,3582.56
+2024-08-18,East Port (Newark),Automotive Parts,1117,285,14.1,0.97,377,0,2816.09
+2024-08-18,South Hub (Dallas),Consumer Tech,264,397,13.5,0.62,235,10,487.35
+2024-08-18,South Hub (Dallas),Home Living,1029,266,7.7,1.35,539,0,2996.04
+2024-08-18,South Hub (Dallas),Industrial Tools,991,338,12.2,1.07,576,0,2227.54
+2024-08-18,South Hub (Dallas),Automotive Parts,581,280,13.1,2.62,289,0,1451.73
+2024-08-25,Hub Central (Chicago),Consumer Tech,1376,335,10.7,2.6,249,0,2693.52
+2024-08-25,Hub Central (Chicago),Home Living,500,240,10.3,0.65,716,0,1468.91
+2024-08-25,Hub Central (Chicago),Industrial Tools,983,261,13.1,0.36,164,0,2804.37
+2024-08-25,Hub Central (Chicago),Automotive Parts,825,285,11.2,1.24,260,0,2465.98
+2024-08-25,West Coast (Los Angeles),Consumer Tech,1421,239,12.2,3.48,696,0,4030.58
+2024-08-25,West Coast (Los Angeles),Home Living,707,290,7.8,1.73,695,0,1922.91
+2024-08-25,West Coast (Los Angeles),Industrial Tools,529,230,10.0,2.76,627,0,1504.4
+2024-08-25,West Coast (Los Angeles),Automotive Parts,943,355,13.8,3.51,539,0,2144.62
+2024-08-25,East Port (Newark),Consumer Tech,1375,343,9.2,2.22,481,0,3378.65
+2024-08-25,East Port (Newark),Home Living,943,204,12.5,2.69,445,0,1915.55
+2024-08-25,East Port (Newark),Industrial Tools,447,299,10.7,2.71,452,0,1408.72
+2024-08-25,East Port (Newark),Automotive Parts,318,222,16.1,1.4,178,0,806.08
+2024-08-25,South Hub (Dallas),Consumer Tech,645,228,12.0,2.0,359,0,2013.49
+2024-08-25,South Hub (Dallas),Home Living,891,283,9.7,1.67,105,0,1656.63
+2024-08-25,South Hub (Dallas),Industrial Tools,1178,374,13.8,1.98,332,0,3153.4
+2024-08-25,South Hub (Dallas),Automotive Parts,1465,225,15.7,3.38,610,0,3817.1
+2024-09-01,Hub Central (Chicago),Consumer Tech,917,334,17.7,2.24,608,0,2204.83
+2024-09-01,Hub Central (Chicago),Home Living,1434,238,12.0,0.48,142,0,3582.98
+2024-09-01,Hub Central (Chicago),Industrial Tools,288,246,11.3,2.21,574,0,766.76
+2024-09-01,Hub Central (Chicago),Automotive Parts,1203,384,14.6,1.32,172,0,3566.44
+2024-09-01,West Coast (Los Angeles),Consumer Tech,513,256,13.3,3.74,458,0,1154.43
+2024-09-01,West Coast (Los Angeles),Home Living,875,271,12.1,0.83,217,0,2379.72
+2024-09-01,West Coast (Los Angeles),Industrial Tools,1050,315,12.7,0.98,333,0,2615.77
+2024-09-01,West Coast (Los Angeles),Automotive Parts,272,215,9.9,0.4,529,0,817.92
+2024-09-01,East Port (Newark),Consumer Tech,931,338,11.9,2.7,289,0,2067.72
+2024-09-01,East Port (Newark),Home Living,351,301,12.4,3.6,528,0,1016.52
+2024-09-01,East Port (Newark),Industrial Tools,1176,259,5.6,1.87,749,0,3744.71
+2024-09-01,East Port (Newark),Automotive Parts,1428,230,15.4,0.74,373,0,3748.25
+2024-09-01,South Hub (Dallas),Consumer Tech,1190,202,12.3,1.77,488,0,3661.44
+2024-09-01,South Hub (Dallas),Home Living,339,276,14.7,1.99,701,0,756.94
+2024-09-01,South Hub (Dallas),Industrial Tools,1441,276,12.4,2.51,554,0,4219.71
+2024-09-01,South Hub (Dallas),Automotive Parts,367,377,10.3,1.07,222,12,735.86
+2024-09-08,Hub Central (Chicago),Consumer Tech,1271,319,4.7,1.22,182,0,2629.7
+2024-09-08,Hub Central (Chicago),Home Living,793,302,6.4,3.0,291,0,1629.58
+2024-09-08,Hub Central (Chicago),Industrial Tools,433,219,7.3,3.71,543,0,780.9
+2024-09-08,Hub Central (Chicago),Automotive Parts,1338,201,17.0,0.87,601,0,3411.53
+2024-09-08,West Coast (Los Angeles),Consumer Tech,835,323,8.7,2.86,692,0,2470.0
+2024-09-08,West Coast (Los Angeles),Home Living,822,229,10.5,1.23,365,0,2558.75
+2024-09-08,West Coast (Los Angeles),Industrial Tools,655,393,14.5,2.38,544,0,1446.97
+2024-09-08,West Coast (Los Angeles),Automotive Parts,1132,326,10.7,3.2,191,0,2388.63
+2024-09-08,East Port (Newark),Consumer Tech,1003,315,15.7,2.48,136,0,1904.1
+2024-09-08,East Port (Newark),Home Living,810,275,12.9,3.22,189,0,2131.4
+2024-09-08,East Port (Newark),Industrial Tools,1282,294,20.2,2.46,731,0,2510.82
+2024-09-08,East Port (Newark),Automotive Parts,1428,309,10.4,1.38,618,0,4215.03
+2024-09-08,South Hub (Dallas),Consumer Tech,196,261,5.6,3.03,563,26,482.53
+2024-09-08,South Hub (Dallas),Home Living,724,396,16.9,1.65,373,0,1533.13
+2024-09-08,South Hub (Dallas),Industrial Tools,756,226,10.5,3.2,703,0,2081.91
+2024-09-08,South Hub (Dallas),Automotive Parts,1026,319,7.3,1.52,635,0,2315.0
+2024-09-15,Hub Central (Chicago),Consumer Tech,668,285,13.0,3.28,706,0,1224.57
+2024-09-15,Hub Central (Chicago),Home Living,662,380,17.5,3.76,427,0,2023.38
+2024-09-15,Hub Central (Chicago),Industrial Tools,1178,220,12.8,1.81,244,0,3494.5
+2024-09-15,Hub Central (Chicago),Automotive Parts,265,291,12.0,3.62,726,23,756.23
+2024-09-15,West Coast (Los Angeles),Consumer Tech,534,200,11.1,3.75,186,0,1272.31
+2024-09-15,West Coast (Los Angeles),Home Living,689,307,9.6,0.64,364,0,1520.64
+2024-09-15,West Coast (Los Angeles),Industrial Tools,1192,364,9.1,1.78,158,0,3232.27
+2024-09-15,West Coast (Los Angeles),Automotive Parts,1444,295,10.3,2.93,446,0,3383.93
+2024-09-15,East Port (Newark),Consumer Tech,920,336,15.4,0.94,567,0,2224.52
+2024-09-15,East Port (Newark),Home Living,622,230,12.6,1.59,100,0,1246.48
+2024-09-15,East Port (Newark),Industrial Tools,1013,263,15.1,1.46,361,0,2673.43
+2024-09-15,East Port (Newark),Automotive Parts,1005,272,15.9,1.72,236,0,3201.5
+2024-09-15,South Hub (Dallas),Consumer Tech,747,242,11.5,2.94,305,0,1634.25
+2024-09-15,South Hub (Dallas),Home Living,1179,382,11.4,3.04,728,0,2681.0
+2024-09-15,South Hub (Dallas),Industrial Tools,471,356,9.2,2.29,135,0,888.54
+2024-09-15,South Hub (Dallas),Automotive Parts,585,294,9.7,0.35,685,0,1199.5
+2024-09-22,Hub Central (Chicago),Consumer Tech,1310,339,11.2,3.25,334,0,2443.11
+2024-09-22,Hub Central (Chicago),Home Living,375,314,9.0,1.7,663,0,1078.81
+2024-09-22,Hub Central (Chicago),Industrial Tools,1027,292,11.5,2.94,116,0,3218.39
+2024-09-22,Hub Central (Chicago),Automotive Parts,607,293,14.4,2.28,243,0,1653.15
+2024-09-22,West Coast (Los Angeles),Consumer Tech,496,355,11.6,1.08,583,0,1240.93
+2024-09-22,West Coast (Los Angeles),Home Living,906,274,10.9,1.87,344,0,2180.14
+2024-09-22,West Coast (Los Angeles),Industrial Tools,517,281,9.2,2.34,203,0,1329.98
+2024-09-22,West Coast (Los Angeles),Automotive Parts,1487,314,15.0,1.88,555,0,4436.53
+2024-09-22,East Port (Newark),Consumer Tech,368,391,13.1,2.39,669,0,980.96
+2024-09-22,East Port (Newark),Home Living,910,218,9.2,1.16,499,0,2624.67
+2024-09-22,East Port (Newark),Industrial Tools,667,351,10.1,0.73,245,0,2061.47
+2024-09-22,East Port (Newark),Automotive Parts,217,395,12.8,0.33,342,29,435.3
+2024-09-22,South Hub (Dallas),Consumer Tech,627,396,16.4,1.59,723,0,1705.38
+2024-09-22,South Hub (Dallas),Home Living,697,281,10.3,3.73,683,0,1969.43
+2024-09-22,South Hub (Dallas),Industrial Tools,1192,289,11.5,1.94,788,0,2179.61
+2024-09-22,South Hub (Dallas),Automotive Parts,1293,269,13.3,2.29,750,0,3425.01
+2024-09-29,Hub Central (Chicago),Consumer Tech,513,273,14.8,1.33,250,0,986.5
+2024-09-29,Hub Central (Chicago),Home Living,998,231,8.0,0.56,591,0,2846.54
+2024-09-29,Hub Central (Chicago),Industrial Tools,707,259,10.2,1.03,179,0,2117.84
+2024-09-29,Hub Central (Chicago),Automotive Parts,377,222,10.7,2.58,436,0,996.81
+2024-09-29,West Coast (Los Angeles),Consumer Tech,1315,283,13.0,1.76,623,0,2560.16
+2024-09-29,West Coast (Los Angeles),Home Living,1482,232,17.1,2.52,125,0,4493.54
+2024-09-29,West Coast (Los Angeles),Industrial Tools,803,236,10.2,2.08,112,0,2563.34
+2024-09-29,West Coast (Los Angeles),Automotive Parts,737,325,7.6,1.33,415,0,2041.03
+2024-09-29,East Port (Newark),Consumer Tech,1258,242,17.2,2.4,355,0,3620.74
+2024-09-29,East Port (Newark),Home Living,166,262,11.3,2.6,154,17,527.83
+2024-09-29,East Port (Newark),Industrial Tools,405,235,7.1,2.3,277,0,1131.54
+2024-09-29,East Port (Newark),Automotive Parts,627,361,11.9,0.58,174,0,1190.85
+2024-09-29,South Hub (Dallas),Consumer Tech,579,377,13.9,1.24,729,0,1338.91
+2024-09-29,South Hub (Dallas),Home Living,1055,254,13.0,2.29,782,0,1952.82
+2024-09-29,South Hub (Dallas),Industrial Tools,738,342,12.4,1.94,111,0,1909.01
+2024-09-29,South Hub (Dallas),Automotive Parts,468,348,14.4,2.98,574,0,1316.76
+2024-10-06,Hub Central (Chicago),Consumer Tech,1200,277,9.0,2.33,246,0,3681.26
+2024-10-06,Hub Central (Chicago),Home Living,372,386,10.9,1.25,352,0,1040.47
+2024-10-06,Hub Central (Chicago),Industrial Tools,824,340,8.9,0.25,239,0,2083.96
+2024-10-06,Hub Central (Chicago),Automotive Parts,214,240,14.0,1.99,215,25,678.78
+2024-10-06,West Coast (Los Angeles),Consumer Tech,389,292,9.5,2.04,574,0,888.2
+2024-10-06,West Coast (Los Angeles),Home Living,804,210,16.9,2.06,426,0,2416.12
+2024-10-06,West Coast (Los Angeles),Industrial Tools,395,313,10.3,0.84,700,0,984.65
+2024-10-06,West Coast (Los Angeles),Automotive Parts,877,375,12.8,3.69,475,0,1777.03
+2024-10-06,East Port (Newark),Consumer Tech,652,336,8.9,0.75,216,0,1307.01
+2024-10-06,East Port (Newark),Home Living,247,301,13.8,2.52,392,20,735.93
+2024-10-06,East Port (Newark),Industrial Tools,215,344,11.5,1.26,620,3,537.08
+2024-10-06,East Port (Newark),Automotive Parts,1202,209,4.3,2.37,455,0,3507.06
+2024-10-06,South Hub (Dallas),Consumer Tech,356,276,11.4,3.49,559,0,1111.13
+2024-10-06,South Hub (Dallas),Home Living,676,364,9.9,2.66,430,0,1693.12
+2024-10-06,South Hub (Dallas),Industrial Tools,1170,340,13.1,1.46,176,0,3540.9
+2024-10-06,South Hub (Dallas),Automotive Parts,964,354,11.8,0.41,761,0,1895.93
+2024-10-13,Hub Central (Chicago),Consumer Tech,1034,237,15.6,2.08,723,0,2794.88
+2024-10-13,Hub Central (Chicago),Home Living,1364,251,9.3,3.03,134,0,4004.11
+2024-10-13,Hub Central (Chicago),Industrial Tools,965,260,7.0,0.81,732,0,1993.94
+2024-10-13,Hub Central (Chicago),Automotive Parts,455,225,11.7,0.7,636,0,1434.76
+2024-10-13,West Coast (Los Angeles),Consumer Tech,188,270,11.7,2.45,551,25,357.86
+2024-10-13,West Coast (Los Angeles),Home Living,1255,322,8.9,2.47,579,0,2524.48
+2024-10-13,West Coast (Los Angeles),Industrial Tools,1169,232,13.4,0.65,141,0,2504.98
+2024-10-13,West Coast (Los Angeles),Automotive Parts,183,224,9.0,2.6,194,40,399.85
+2024-10-13,East Port (Newark),Consumer Tech,483,258,6.0,3.19,299,0,1365.3
+2024-10-13,East Port (Newark),Home Living,299,301,12.3,3.75,351,5,655.77
+2024-10-13,East Port (Newark),Industrial Tools,797,372,16.5,1.23,666,0,2418.31
+2024-10-13,East Port (Newark),Automotive Parts,1474,329,12.6,0.69,560,0,4252.0
+2024-10-13,South Hub (Dallas),Consumer Tech,1382,358,9.7,2.11,774,0,3554.93
+2024-10-13,South Hub (Dallas),Home Living,372,276,14.1,0.55,153,0,726.55
+2024-10-13,South Hub (Dallas),Industrial Tools,1294,299,3.7,1.88,161,0,4136.01
+2024-10-13,South Hub (Dallas),Automotive Parts,661,305,13.1,1.04,782,0,1353.55
+2024-10-20,Hub Central (Chicago),Consumer Tech,494,276,13.6,2.2,551,0,1537.49
+2024-10-20,Hub Central (Chicago),Home Living,973,311,4.8,0.33,650,0,2189.01
+2024-10-20,Hub Central (Chicago),Industrial Tools,757,364,17.1,2.36,187,0,2056.09
+2024-10-20,Hub Central (Chicago),Automotive Parts,170,397,10.9,1.89,643,2,310.82
+2024-10-20,West Coast (Los Angeles),Consumer Tech,1208,392,10.5,1.39,674,0,3715.75
+2024-10-20,West Coast (Los Angeles),Home Living,1115,384,8.8,1.26,731,0,2142.77
+2024-10-20,West Coast (Los Angeles),Industrial Tools,491,255,9.3,3.77,452,0,1255.63
+2024-10-20,West Coast (Los Angeles),Automotive Parts,1073,394,11.1,0.72,467,0,2006.93
+2024-10-20,East Port (Newark),Consumer Tech,1233,343,12.3,0.23,370,0,3447.88
+2024-10-20,East Port (Newark),Home Living,736,363,8.0,3.42,754,0,1743.32
+2024-10-20,East Port (Newark),Industrial Tools,265,245,16.3,0.27,142,0,766.68
+2024-10-20,East Port (Newark),Automotive Parts,825,254,12.7,3.34,522,0,2388.44
+2024-10-20,South Hub (Dallas),Consumer Tech,1255,342,13.6,1.96,121,0,3464.33
+2024-10-20,South Hub (Dallas),Home Living,860,361,9.1,1.55,553,0,1551.81
+2024-10-20,South Hub (Dallas),Industrial Tools,516,223,11.0,3.13,679,0,929.96
+2024-10-20,South Hub (Dallas),Automotive Parts,229,207,18.5,0.7,183,0,508.94
+2024-10-27,Hub Central (Chicago),Consumer Tech,1196,298,19.1,1.29,789,0,3474.15
+2024-10-27,Hub Central (Chicago),Home Living,1138,272,12.7,3.24,579,0,3452.16
+2024-10-27,Hub Central (Chicago),Industrial Tools,458,303,10.7,1.4,184,0,1032.8
+2024-10-27,Hub Central (Chicago),Automotive Parts,448,297,8.0,0.34,786,0,1378.83
+2024-10-27,West Coast (Los Angeles),Consumer Tech,1277,377,10.3,2.12,484,0,4009.31
+2024-10-27,West Coast (Los Angeles),Home Living,1131,392,13.9,1.68,198,0,3570.84
+2024-10-27,West Coast (Los Angeles),Industrial Tools,676,241,12.9,1.88,132,0,2095.19
+2024-10-27,West Coast (Los Angeles),Automotive Parts,931,313,4.9,2.94,655,0,2234.91
+2024-10-27,East Port (Newark),Consumer Tech,1472,233,12.1,2.58,405,0,2792.72
+2024-10-27,East Port (Newark),Home Living,844,297,15.3,3.49,648,0,2620.8
+2024-10-27,East Port (Newark),Industrial Tools,412,378,15.0,2.94,164,0,1250.4
+2024-10-27,East Port (Newark),Automotive Parts,689,295,7.6,3.52,684,0,2099.31
+2024-10-27,South Hub (Dallas),Consumer Tech,618,245,12.3,3.15,608,0,1548.18
+2024-10-27,South Hub (Dallas),Home Living,1253,206,11.4,0.73,188,0,2490.49
+2024-10-27,South Hub (Dallas),Industrial Tools,1390,304,9.5,0.6,657,0,3393.02
+2024-10-27,South Hub (Dallas),Automotive Parts,348,382,17.8,0.58,333,39,962.41
+2024-11-03,Hub Central (Chicago),Consumer Tech,1092,261,11.8,2.21,245,0,2554.06
+2024-11-03,Hub Central (Chicago),Home Living,1483,307,8.9,1.87,343,0,2770.09
+2024-11-03,Hub Central (Chicago),Industrial Tools,336,332,7.1,2.59,153,0,998.02
+2024-11-03,Hub Central (Chicago),Automotive Parts,1026,323,15.3,2.91,296,0,2953.61
+2024-11-03,West Coast (Los Angeles),Consumer Tech,997,255,13.5,2.33,521,0,3181.75
+2024-11-03,West Coast (Los Angeles),Home Living,1282,392,12.8,1.13,357,0,3556.1
+2024-11-03,West Coast (Los Angeles),Industrial Tools,1012,232,10.1,0.57,202,0,3032.57
+2024-11-03,West Coast (Los Angeles),Automotive Parts,1227,363,12.0,3.54,445,0,3771.05
+2024-11-03,East Port (Newark),Consumer Tech,1278,254,14.0,3.0,473,0,3202.82
+2024-11-03,East Port (Newark),Home Living,1039,282,8.8,3.47,209,0,2480.57
+2024-11-03,East Port (Newark),Industrial Tools,1269,291,14.5,2.8,296,0,3026.68
+2024-11-03,East Port (Newark),Automotive Parts,1056,260,8.6,0.23,665,0,2976.52
+2024-11-03,South Hub (Dallas),Consumer Tech,1269,233,8.6,1.06,369,0,3434.33
+2024-11-03,South Hub (Dallas),Home Living,1261,297,5.2,0.64,333,0,3723.74
+2024-11-03,South Hub (Dallas),Industrial Tools,1346,231,13.1,1.83,650,0,3878.5
+2024-11-03,South Hub (Dallas),Automotive Parts,1243,257,15.2,3.46,693,0,2931.73
+2024-11-10,Hub Central (Chicago),Consumer Tech,1271,344,7.1,1.93,628,0,2829.83
+2024-11-10,Hub Central (Chicago),Home Living,1267,303,12.6,3.7,201,0,3210.44
+2024-11-10,Hub Central (Chicago),Industrial Tools,1370,222,13.1,3.25,163,0,2671.46
+2024-11-10,Hub Central (Chicago),Automotive Parts,1292,270,14.6,1.31,231,0,2718.81
+2024-11-10,West Coast (Los Angeles),Consumer Tech,154,363,8.7,1.17,319,7,491.13
+2024-11-10,West Coast (Los Angeles),Home Living,872,294,13.0,2.5,396,0,2275.8
+2024-11-10,West Coast (Los Angeles),Industrial Tools,1126,367,7.8,0.72,411,0,3214.27
+2024-11-10,West Coast (Los Angeles),Automotive Parts,174,381,8.3,0.4,204,17,426.83
+2024-11-10,East Port (Newark),Consumer Tech,569,388,7.6,2.18,489,0,1800.39
+2024-11-10,East Port (Newark),Home Living,1383,321,13.3,1.2,444,0,3704.24
+2024-11-10,East Port (Newark),Industrial Tools,1425,383,11.7,0.35,195,0,3050.55
+2024-11-10,East Port (Newark),Automotive Parts,492,335,13.9,3.07,458,0,1095.99
+2024-11-10,South Hub (Dallas),Consumer Tech,1472,320,8.0,1.39,134,0,2985.96
+2024-11-10,South Hub (Dallas),Home Living,1416,398,12.5,0.45,405,0,2934.34
+2024-11-10,South Hub (Dallas),Industrial Tools,924,210,14.5,3.48,666,0,2675.45
+2024-11-10,South Hub (Dallas),Automotive Parts,954,387,10.2,2.04,741,0,2496.97
+2024-11-17,Hub Central (Chicago),Consumer Tech,1185,355,16.6,0.69,718,0,3063.25
+2024-11-17,Hub Central (Chicago),Home Living,736,311,14.4,2.82,535,0,1338.54
+2024-11-17,Hub Central (Chicago),Industrial Tools,774,368,9.4,2.29,536,0,1851.46
+2024-11-17,Hub Central (Chicago),Automotive Parts,786,348,14.5,1.68,533,0,2292.33
+2024-11-17,West Coast (Los Angeles),Consumer Tech,202,227,7.7,3.25,496,0,413.17
+2024-11-17,West Coast (Los Angeles),Home Living,930,268,9.9,3.67,710,0,2247.35
+2024-11-17,West Coast (Los Angeles),Industrial Tools,570,381,9.4,3.7,743,0,1157.14
+2024-11-17,West Coast (Los Angeles),Automotive Parts,1009,378,13.6,0.87,117,0,2015.45
+2024-11-17,East Port (Newark),Consumer Tech,728,233,3.1,2.78,450,0,2303.47
+2024-11-17,East Port (Newark),Home Living,742,352,13.5,2.73,426,0,1371.89
+2024-11-17,East Port (Newark),Industrial Tools,1251,376,13.7,0.26,308,0,3997.63
+2024-11-17,East Port (Newark),Automotive Parts,557,200,15.1,0.43,410,0,1171.4
+2024-11-17,South Hub (Dallas),Consumer Tech,1100,214,6.6,0.72,327,0,2312.12
+2024-11-17,South Hub (Dallas),Home Living,313,393,15.9,2.31,588,11,715.75
+2024-11-17,South Hub (Dallas),Industrial Tools,1300,389,10.9,3.56,177,0,2429.69
+2024-11-17,South Hub (Dallas),Automotive Parts,863,260,13.0,2.75,509,0,1630.53
+2024-11-24,Hub Central (Chicago),Consumer Tech,170,294,14.0,0.78,623,13,391.79
+2024-11-24,Hub Central (Chicago),Home Living,160,221,13.3,2.38,294,17,457.69
+2024-11-24,Hub Central (Chicago),Industrial Tools,1342,275,11.3,0.51,757,0,2867.9
+2024-11-24,Hub Central (Chicago),Automotive Parts,349,284,7.9,0.53,314,0,830.51
+2024-11-24,West Coast (Los Angeles),Consumer Tech,496,355,13.2,3.35,299,0,1176.31
+2024-11-24,West Coast (Los Angeles),Home Living,335,292,13.3,0.6,140,0,701.21
+2024-11-24,West Coast (Los Angeles),Industrial Tools,1237,258,15.7,1.84,117,0,2749.9
+2024-11-24,West Coast (Los Angeles),Automotive Parts,705,319,8.6,3.63,780,0,1411.41
+2024-11-24,East Port (Newark),Consumer Tech,325,300,14.4,2.57,445,0,705.91
+2024-11-24,East Port (Newark),Home Living,783,286,13.3,3.15,640,0,1421.15
+2024-11-24,East Port (Newark),Industrial Tools,1221,267,12.9,1.64,728,0,3562.49
+2024-11-24,East Port (Newark),Automotive Parts,490,280,11.3,1.01,404,0,1009.01
+2024-11-24,South Hub (Dallas),Consumer Tech,955,389,13.6,1.42,750,0,1889.04
+2024-11-24,South Hub (Dallas),Home Living,351,279,13.6,3.05,529,0,1090.36
+2024-11-24,South Hub (Dallas),Industrial Tools,642,260,9.9,3.36,680,0,1609.45
+2024-11-24,South Hub (Dallas),Automotive Parts,1155,324,11.6,0.87,505,0,2225.42
+2024-12-01,Hub Central (Chicago),Consumer Tech,396,356,21.6,2.18,733,0,714.05
+2024-12-01,Hub Central (Chicago),Home Living,1474,282,14.3,3.24,317,0,4187.91
+2024-12-01,Hub Central (Chicago),Industrial Tools,1155,375,16.6,0.54,724,0,2583.81
+2024-12-01,Hub Central (Chicago),Automotive Parts,488,340,8.9,3.1,555,0,1104.03
+2024-12-01,West Coast (Los Angeles),Consumer Tech,1135,231,10.3,1.21,248,0,2843.45
+2024-12-01,West Coast (Los Angeles),Home Living,773,223,11.0,3.03,426,0,2462.09
+2024-12-01,West Coast (Los Angeles),Industrial Tools,569,337,12.4,2.41,395,0,1658.0
+2024-12-01,West Coast (Los Angeles),Automotive Parts,421,281,9.8,0.69,152,0,1101.52
+2024-12-01,East Port (Newark),Consumer Tech,759,228,15.7,2.11,594,0,1785.09
+2024-12-01,East Port (Newark),Home Living,1376,270,11.4,1.03,115,0,2955.01
+2024-12-01,East Port (Newark),Industrial Tools,1236,205,14.5,0.25,450,0,3411.99
+2024-12-01,East Port (Newark),Automotive Parts,1056,217,12.1,0.89,369,0,2717.15
+2024-12-01,South Hub (Dallas),Consumer Tech,1173,259,10.0,1.29,263,0,3241.52
+2024-12-01,South Hub (Dallas),Home Living,1157,222,12.2,3.39,271,0,2483.94
+2024-12-01,South Hub (Dallas),Industrial Tools,844,360,10.4,2.37,570,0,1695.27
+2024-12-01,South Hub (Dallas),Automotive Parts,679,204,10.0,3.35,614,0,1239.89
+2024-12-08,Hub Central (Chicago),Consumer Tech,729,361,11.6,2.06,397,0,2218.07
+2024-12-08,Hub Central (Chicago),Home Living,637,321,8.4,2.1,614,0,1518.29
+2024-12-08,Hub Central (Chicago),Industrial Tools,549,256,15.1,1.22,790,0,1479.42
+2024-12-08,Hub Central (Chicago),Automotive Parts,576,296,14.3,3.52,394,0,1125.11
+2024-12-08,West Coast (Los Angeles),Consumer Tech,797,238,15.9,2.29,742,0,2050.4
+2024-12-08,West Coast (Los Angeles),Home Living,1108,325,7.5,2.88,337,0,3284.31
+2024-12-08,West Coast (Los Angeles),Industrial Tools,126,300,12.3,0.75,678,0,302.97
+2024-12-08,West Coast (Los Angeles),Automotive Parts,341,356,15.0,2.83,670,0,1078.13
+2024-12-08,East Port (Newark),Consumer Tech,1386,361,12.8,2.84,579,0,2744.32
+2024-12-08,East Port (Newark),Home Living,282,386,15.5,2.85,228,6,655.75
+2024-12-08,East Port (Newark),Industrial Tools,1179,304,10.0,1.0,468,0,2241.23
+2024-12-08,East Port (Newark),Automotive Parts,1329,260,13.3,3.0,210,0,2748.55
+2024-12-08,South Hub (Dallas),Consumer Tech,260,222,14.3,3.37,729,0,783.71
+2024-12-08,South Hub (Dallas),Home Living,406,375,11.5,2.31,654,0,1188.35
+2024-12-08,South Hub (Dallas),Industrial Tools,531,343,12.8,3.43,676,0,1324.81
+2024-12-08,South Hub (Dallas),Automotive Parts,1413,274,8.4,3.46,128,0,3546.73
+2024-12-15,Hub Central (Chicago),Consumer Tech,1381,352,14.4,0.89,498,0,3804.72
+2024-12-15,Hub Central (Chicago),Home Living,172,394,5.1,2.49,444,23,468.41
+2024-12-15,Hub Central (Chicago),Industrial Tools,1017,293,14.9,2.27,472,0,2182.37
+2024-12-15,Hub Central (Chicago),Automotive Parts,320,391,10.8,2.89,295,19,587.13
+2024-12-15,West Coast (Los Angeles),Consumer Tech,479,250,12.2,3.3,573,0,876.27
+2024-12-15,West Coast (Los Angeles),Home Living,904,264,11.9,0.7,276,0,2759.43
+2024-12-15,West Coast (Los Angeles),Industrial Tools,956,391,10.4,2.87,275,0,2705.48
+2024-12-15,West Coast (Los Angeles),Automotive Parts,1389,298,12.4,2.81,143,0,3918.3
+2024-12-15,East Port (Newark),Consumer Tech,667,367,12.8,0.85,590,0,1449.76
+2024-12-15,East Port (Newark),Home Living,1391,383,11.5,3.22,481,0,3466.72
+2024-12-15,East Port (Newark),Industrial Tools,856,331,15.2,1.52,242,0,1770.97
+2024-12-15,East Port (Newark),Automotive Parts,630,358,15.7,1.54,156,0,1912.97
+2024-12-15,South Hub (Dallas),Consumer Tech,1264,255,12.6,0.49,237,0,2643.28
+2024-12-15,South Hub (Dallas),Home Living,573,314,9.2,2.42,392,0,1734.03
+2024-12-15,South Hub (Dallas),Industrial Tools,1347,385,19.1,2.83,260,0,3450.94
+2024-12-15,South Hub (Dallas),Automotive Parts,970,355,11.4,3.76,718,0,2732.18
+2024-12-22,Hub Central (Chicago),Consumer Tech,154,355,12.9,3.08,396,17,429.9
+2024-12-22,Hub Central (Chicago),Home Living,158,224,14.8,1.13,786,0,504.71
+2024-12-22,Hub Central (Chicago),Industrial Tools,859,354,9.1,1.28,403,0,1684.33
+2024-12-22,Hub Central (Chicago),Automotive Parts,1018,317,14.2,2.42,523,0,2315.99
+2024-12-22,West Coast (Los Angeles),Consumer Tech,328,326,9.5,2.75,374,0,772.69
+2024-12-22,West Coast (Los Angeles),Home Living,1260,235,8.9,2.86,256,0,3278.9
+2024-12-22,West Coast (Los Angeles),Industrial Tools,543,343,12.6,0.86,715,0,1078.7
+2024-12-22,West Coast (Los Angeles),Automotive Parts,1450,387,13.9,0.99,338,0,3794.9
+2024-12-22,East Port (Newark),Consumer Tech,451,314,10.2,2.39,277,0,1225.53
+2024-12-22,East Port (Newark),Home Living,1065,202,12.4,3.26,731,0,3372.58
+2024-12-22,East Port (Newark),Industrial Tools,178,329,15.1,1.49,456,25,332.62
+2024-12-22,East Port (Newark),Automotive Parts,1361,227,10.1,1.41,506,0,3783.94
+2024-12-22,South Hub (Dallas),Consumer Tech,734,352,16.3,0.52,348,0,1623.84
+2024-12-22,South Hub (Dallas),Home Living,518,355,8.4,2.93,204,0,1346.51
+2024-12-22,South Hub (Dallas),Industrial Tools,1212,245,12.2,3.19,134,0,2193.17
+2024-12-22,South Hub (Dallas),Automotive Parts,1249,327,13.4,2.84,379,0,3331.83
+2024-12-29,Hub Central (Chicago),Consumer Tech,1088,353,14.1,0.84,241,0,2323.78
+2024-12-29,Hub Central (Chicago),Home Living,765,231,7.7,1.99,392,0,1719.05
+2024-12-29,Hub Central (Chicago),Industrial Tools,172,385,13.6,0.75,366,3,459.61
+2024-12-29,Hub Central (Chicago),Automotive Parts,648,331,4.0,2.93,321,0,1610.42
+2024-12-29,West Coast (Los Angeles),Consumer Tech,1081,346,10.7,0.78,142,0,2034.93
+2024-12-29,West Coast (Los Angeles),Home Living,1112,248,9.1,3.59,415,0,2289.26
+2024-12-29,West Coast (Los Angeles),Industrial Tools,263,272,17.5,0.98,162,18,677.46
+2024-12-29,West Coast (Los Angeles),Automotive Parts,344,390,10.9,1.16,762,12,648.52
+2024-12-29,East Port (Newark),Consumer Tech,463,239,13.6,0.25,556,0,1164.21
+2024-12-29,East Port (Newark),Home Living,1496,238,15.1,2.5,720,0,4057.5
+2024-12-29,East Port (Newark),Industrial Tools,608,376,9.4,1.13,763,0,1857.12
+2024-12-29,East Port (Newark),Automotive Parts,1439,326,6.4,0.59,653,0,3321.91
+2024-12-29,South Hub (Dallas),Consumer Tech,400,299,13.2,1.31,528,0,973.02
+2024-12-29,South Hub (Dallas),Home Living,666,371,12.7,1.65,764,0,1987.35
+2024-12-29,South Hub (Dallas),Industrial Tools,1079,389,13.7,3.57,550,0,3031.26
+2024-12-29,South Hub (Dallas),Automotive Parts,460,335,9.5,2.97,650,0,1462.12

@@ -1,0 +1,15 @@
+services:
+  datapilot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: datapilot-ai
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - HOST=0.0.0.0
+      - DEFAULT_LLM_PROVIDER=${DEFAULT_LLM_PROVIDER:-local_engine}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    restart: unless-stopped
