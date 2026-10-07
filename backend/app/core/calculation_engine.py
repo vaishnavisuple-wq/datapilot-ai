@@ -57,7 +57,9 @@ class CalculationEngine:
         # Determine smart aggregation if set to auto or sum for non-summable metrics
         actual_agg = agg
         m_low = metric.lower()
-        is_rate = any(k in m_low for k in ["rate", "pct", "%", "margin", "discount", "attainment", "satisfaction", "rating", "score", "price", "cac", "arpu", "lead time", "tenure"])
+        has_currency = any(c in m_low for c in ["($)", "usd", "dollar", "amount ($)"])
+        has_rate_word = any(r in m_low for r in ["rate", "pct", "%", "ratio"])
+        is_rate = has_rate_word or (not has_currency and any(k in m_low for k in ["margin", "discount", "attainment", "satisfaction", "rating", "score", "price", "cac", "arpu", "lead time", "tenure"]))
         
         if (agg == "auto" or agg == "sum") and is_rate:
             actual_agg = "mean"

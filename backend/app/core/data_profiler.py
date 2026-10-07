@@ -308,8 +308,12 @@ class DataProfiler:
         """Classifies a numeric column into volume (summable) vs rate/average/score (non-summable)."""
         m = str(metric_name).lower()
 
+        # Explicit currency indicators without percent or rate are volume metrics (e.g. "Gross Margin ($)")
+        has_currency = any(c in m for c in ["($)", "usd", "dollar", "amount ($)"])
+        has_rate_word = any(r in m for r in ["rate", "pct", "%", "ratio"])
+
         # Rates and percentages
-        if any(k in m for k in ["rate", "pct", "%", "margin", "discount", "attainment", "churn", "defect", "return", "conversion"]):
+        if has_rate_word or (not has_currency and any(k in m for k in ["margin", "discount", "attainment", "churn", "defect", "return", "conversion"])):
             return {
                 "type": "rate_pct",
                 "is_additive": False,
