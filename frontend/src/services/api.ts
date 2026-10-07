@@ -84,6 +84,32 @@ export const api = {
     return res.json();
   },
 
+  async createCustomChart(
+    sessionId: string,
+    chartType: string,
+    xCol: string,
+    yCol?: string,
+    aggFunc: string = 'auto',
+    topN: number = 10
+  ): Promise<AutoChart> {
+    const res = await fetch(`${API_BASE}/visualize/${sessionId}/custom-chart`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        chart_type: chartType,
+        x_col: xCol,
+        y_col: yCol,
+        agg_func: aggFunc,
+        top_n: topN,
+      }),
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({ detail: 'Failed to generate custom chart' }));
+      throw new Error(err.detail || 'Failed to generate custom chart');
+    }
+    return res.json();
+  },
+
   // Comparisons
   async getComparisonOptions(sessionId: string): Promise<{
     dimensions: string[];

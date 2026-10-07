@@ -220,16 +220,51 @@ class DataProfiler:
         # Inferred Business Domain & Primary Metrics
         domain, primary_metric, primary_dimension = DataProfiler._infer_domain_and_kpis(df.columns, numeric_cols, categorical_cols)
         
-        # Quick executive KPIs based on primary metrics
+        # Smart selection of top 4 executive KPIs (prioritizing primary volume, secondary volume, and key rates)
         executive_kpis = []
-        for col in numeric_cols[:4]:
+        ordered_metric_candidates = []
+        if primary_metric and primary_metric in numeric_cols:
+            ordered_metric_candidates.append(primary_metric)
+            
+        # Add high-value volume candidates
+        for num in numeric_cols:
+            if num not in ordered_metric_candidates:
+                num_low = num.lower()
+                if any(v in num_low for v in ["profit", "income", "cost", "target", "spend", "units", "quantity", "stock", "salary"]):
+                    ordered_metric_candidates.append(num)
+
+        # Add key rate candidates (Margin %, Attainment %, Satisfaction, Churn Rate %, Return Rate %)
+        for num in numeric_cols:
+            if num not in ordered_metric_candidates:
+                num_low = num.lower()
+                if any(r in num_low for r in ["margin", "attainment", "rate", "pct", "%", "satisfaction", "rating", "score"]):
+                    ordered_metric_candidates.append(num)
+
+        # Fill any remaining slots
+        for num in numeric_cols:
+            if num not in ordered_metric_candidates:
+                ordered_metric_candidates.append(num)
+
+        for col in ordered_metric_candidates[:4]:
             stats = numeric_stats.get(col, {})
+            classification = DataProfiler.classify_metric(col, df[col] if col in df.columns else None)
+            is_rate = not classification["is_additive"]
+            
+            # Formulate the mathematically sound display value
+            val = stats.get("mean", 0) if is_rate else stats.get("sum", 0)
+            
             executive_kpis.append({
                 "label": col,
-                "total": stats.get("sum", 0),
-                "average": stats.get("mean", 0),
-                "min": stats.get("min", 0),
-                "max": stats.get("max", 0),
+                "metric_type": classification["type"],
+                "is_additive": classification["is_additive"],
+                "display_label": f"Avg {col}" if is_rate else f"Total {col}",
+                "display_value": round(float(val), 2),
+                "total": round(float(stats.get("sum", 0)), 2),
+                "average": round(float(stats.get("mean", 0)), 2),
+                "min": round(float(stats.get("min", 0)), 2),
+                "max": round(float(stats.get("max", 0)), 2),
+                "format": classification["format"],
+                "unit": classification["unit"],
                 "is_primary": col == primary_metric
             })
 
@@ -266,6 +301,64 @@ class DataProfiler:
             "primary_dimension": primary_dimension,
             "executive_kpis": executive_kpis,
             "preview_data": preview_records
+        }
+
+    @staticmethod
+    def classify_metric(metric_name: str, series: Optional[pd.Series] = None) -> Dict[str, Any]:
+        """Classifies a numeric column into volume (summable) vs rate/average/score (non-summable)."""
+        m = str(metric_name).lower()
+
+        # Rates and percentages
+        if any(k in m for k in ["rate", "pct", "%", "margin", "discount", "attainment", "churn", "defect", "return", "conversion"]):
+            return {
+                "type": "rate_pct",
+                "is_additive": False,
+                "default_agg": "mean",
+                "format": "percent",
+                "unit": "%"
+            }
+
+        # Ratings and scores (e.g. 1-5 scales)
+        if any(k in m for k in ["satisfaction", "rating", "score", "index"]):
+            return {
+                "type": "rating_score",
+                "is_additive": False,
+                "default_agg": "mean",
+                "format": "score",
+                "unit": "/5"
+            }
+
+        # Unit values, durations, averages
+        if any(k in m for k in ["unit price", "price", "cac", "arpu", "lead time", "days", "tenure", "years", "time to", "per rep", "per hire"]):
+            return {
+                "type": "unit_or_average",
+                "is_additive": False,
+                "default_agg": "mean",
+                "format": "currency" if any(c in m for c in ["price", "cac", "arpu", "cost"]) else "number",
+                "unit": ""
+            }
+
+        # Value inspection: if all values are between 0 and 1 and column name hints at a ratio
+        if series is not None:
+            s_clean = series.dropna()
+            if len(s_clean) > 0 and 0.0 <= s_clean.min() and s_clean.max() <= 1.0:
+                if any(k in m for k in ["ratio", "factor", "pct", "discount"]):
+                    return {
+                        "type": "rate_pct",
+                        "is_additive": False,
+                        "default_agg": "mean",
+                        "format": "percent",
+                        "unit": "%"
+                    }
+
+        # Default: summable volume metric
+        is_curr = any(c in m for c in ["sales", "revenue", "profit", "cost", "income", "spend", "target", "cogs", "opex", "mrr", "arr", "salary", "$"])
+        return {
+            "type": "volume",
+            "is_additive": True,
+            "default_agg": "sum",
+            "format": "currency" if is_curr else "number",
+            "unit": ""
         }
 
     @staticmethod

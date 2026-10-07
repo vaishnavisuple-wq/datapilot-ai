@@ -26,10 +26,16 @@ export interface CategoricalStats {
 
 export interface ExecutiveKPI {
   label: string;
+  metric_type?: string;
+  is_additive?: boolean;
+  display_label?: string;
+  display_value?: number;
   total: number;
   average: number;
   min: number;
   max: number;
+  format?: string;
+  unit?: string;
   is_primary: boolean;
 }
 
@@ -70,9 +76,10 @@ export interface DatasetProfile {
 export interface AutoChart {
   id: string;
   title: string;
-  type: 'bar' | 'line' | 'pie' | 'scatter' | 'histogram';
+  type: 'bar' | 'line' | 'pie' | 'scatter' | 'histogram' | 'area';
   x_axis: string;
   y_axis: string;
+  aggregation?: string;
   data: any[];
   description: string;
 }

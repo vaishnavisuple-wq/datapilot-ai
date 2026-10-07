@@ -74,8 +74,15 @@ class ForecastingEngine:
             freq_label = "Daily"
             date_format = "%Y-%m-%d"
 
+        # Determine if metric is rate/level (average) vs flow/volume (sum)
+        m_low = target_metric.lower()
+        is_rate = any(k in m_low for k in ["rate", "pct", "%", "margin", "discount", "attainment", "satisfaction", "rating", "score", "price", "cac", "arpu", "lead time", "stock", "tenure"])
+
         # Aggregate series
-        ts_resampled = ts_df.set_index(target_date).resample(resample_rule)[target_metric].sum().fillna(0)
+        if is_rate:
+            ts_resampled = ts_df.set_index(target_date).resample(resample_rule)[target_metric].mean().dropna()
+        else:
+            ts_resampled = ts_df.set_index(target_date).resample(resample_rule)[target_metric].sum().fillna(0)
 
         # If too few points after resampling, fallback to raw or daily
         if len(ts_resampled) < 4:

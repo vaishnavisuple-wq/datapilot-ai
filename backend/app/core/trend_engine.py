@@ -33,7 +33,13 @@ class TrendEngine:
                 span_days = (clean_df[date_col].max() - clean_df[date_col].min()).days
                 resample_freq = "MS" if span_days > 120 else ("W-MON" if span_days > 30 else "D")
                 
-                grouped = clean_df.set_index(date_col).resample(resample_freq)[primary_metric].sum()
+                m_low = primary_metric.lower()
+                is_rate = any(k in m_low for k in ["rate", "pct", "%", "margin", "discount", "attainment", "satisfaction", "rating", "score", "price", "cac", "arpu", "lead time", "stock", "tenure"])
+                
+                if is_rate:
+                    grouped = clean_df.set_index(date_col).resample(resample_freq)[primary_metric].mean().dropna()
+                else:
+                    grouped = clean_df.set_index(date_col).resample(resample_freq)[primary_metric].sum()
                 
                 # Period-over-Period growth
                 pct_changes = grouped.pct_change() * 100

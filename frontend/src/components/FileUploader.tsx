@@ -10,6 +10,9 @@ import {
   Users, 
   ShieldCheck, 
   ArrowRight,
+  Download,
+  DollarSign,
+  Layers,
   Loader2
 } from 'lucide-react';
 
@@ -64,9 +67,45 @@ export const FileUploader: React.FC<FileUploaderProps> = ({
 
   const sampleDatasets = [
     {
+      id: 'financial_excel',
+      title: 'Corporate Financial Performance',
+      icon: DollarSign,
+      format: 'Excel (.xlsx)',
+      isExcel: true,
+      sheets: '3 Sheets: Revenue & PnL, Product Sales, Regional Targets',
+      color: 'from-emerald-500/20 to-teal-500/20 text-emerald-400 border-emerald-500/30',
+      description: 'Multi-sheet financial model tracking revenues, COGS, gross margins, product profitability, and regional quota attainment.',
+      tag: 'Finance & Multi-Sheet Excel'
+    },
+    {
+      id: 'supply_excel',
+      title: 'Global Supply Chain Operations',
+      icon: Truck,
+      format: 'Excel (.xlsx)',
+      isExcel: true,
+      sheets: '2 Sheets: Inventory Levels, Supplier Scorecard',
+      color: 'from-amber-500/20 to-orange-500/20 text-amber-400 border-amber-500/30',
+      description: 'Multi-warehouse logistics workbook featuring safety stock levels, on-time delivery percentages, defect rates, and vendor lead times.',
+      tag: 'Operations & Logistics Excel'
+    },
+    {
+      id: 'hr_excel',
+      title: 'Enterprise HR & Talent Census',
+      icon: Users,
+      format: 'Excel (.xlsx)',
+      isExcel: true,
+      sheets: '2 Sheets: Employee Census, Recruiting Metrics',
+      color: 'from-purple-500/20 to-pink-500/20 text-purple-400 border-purple-500/30',
+      description: 'Comprehensive workforce dataset covering salaries, satisfaction ratings, retention probabilities, and recruiting pipeline metrics.',
+      tag: 'People Analytics Excel'
+    },
+    {
       id: 'ecommerce',
       title: 'E-Commerce Retail & Profit',
       icon: ShoppingBag,
+      format: 'CSV File',
+      isExcel: false,
+      sheets: 'Single Table',
       color: 'from-blue-500/20 to-indigo-500/20 text-blue-400 border-blue-500/30',
       description: '2,200+ multi-regional orders across Electronics, Furniture & Subscriptions with pricing, margins & discounts.',
       tag: 'Retail & Sales'
@@ -75,25 +114,12 @@ export const FileUploader: React.FC<FileUploaderProps> = ({
       id: 'saas',
       title: 'SaaS Subscription & Churn',
       icon: TrendingUp,
-      color: 'from-emerald-500/20 to-teal-500/20 text-emerald-400 border-emerald-500/30',
+      format: 'CSV File',
+      isExcel: false,
+      sheets: 'Single Table',
+      color: 'from-cyan-500/20 to-blue-500/20 text-cyan-400 border-cyan-500/30',
       description: '36-month subscription cohort metrics tracking MRR expansion, churn rates, ARPU, CAC and customer LTV.',
       tag: 'Finance & SaaS'
-    },
-    {
-      id: 'supply_chain',
-      title: 'Supply Chain & Inventory',
-      icon: Truck,
-      color: 'from-amber-500/20 to-orange-500/20 text-amber-400 border-amber-500/30',
-      description: '800+ warehouse logistics records featuring stock thresholds, lead times, defect rates, and holding costs.',
-      tag: 'Operations & Logistics'
-    },
-    {
-      id: 'hr',
-      title: 'HR Workforce & Attrition',
-      icon: Users,
-      color: 'from-purple-500/20 to-pink-500/20 text-purple-400 border-purple-500/30',
-      description: '350 employee records spanning engineering, sales & marketing with compensation, ratings, and attrition.',
-      tag: 'People Analytics'
     }
   ];
 
@@ -160,7 +186,7 @@ export const FileUploader: React.FC<FileUploaderProps> = ({
 
             <div className="flex flex-wrap items-center justify-center gap-3 text-xs text-slate-400">
               <span className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700/60">
-                <FileSpreadsheet className="w-3.5 h-3.5 text-emerald-400" /> Excel (.xlsx, .xls)
+                <FileSpreadsheet className="w-3.5 h-3.5 text-emerald-400" /> Excel (.xlsx, .xls) Multi-Sheet
               </span>
               <span className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700/60">
                 <FileText className="w-3.5 h-3.5 text-blue-400" /> CSV Files
@@ -173,15 +199,16 @@ export const FileUploader: React.FC<FileUploaderProps> = ({
         )}
       </div>
 
-      {/* Pre-Loaded Enterprise Samples */}
+      {/* Pre-Loaded Enterprise Samples with Multi-Sheet Excel */}
       <div className="mt-12">
         <div className="flex items-center justify-between mb-4">
           <div>
-            <h2 className="text-sm font-bold text-white uppercase tracking-wider">
-              Or explore with realistic pre-loaded datasets
+            <h2 className="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
+              <Layers className="w-4 h-4 text-indigo-400" />
+              Test Datasets & Multi-Sheet Excel Workbooks
             </h2>
             <p className="text-xs text-slate-400">
-              Test instant profiling, smart comparisons, and AI querying with zero setup.
+              Click any dataset to load instantly, or download the Excel (.xlsx) files to test uploading from your computer.
             </p>
           </div>
         </div>
@@ -192,38 +219,72 @@ export const FileUploader: React.FC<FileUploaderProps> = ({
             const isThisLoading = activeSampleLoading === sample.id;
 
             return (
-              <button
+              <div
                 key={sample.id}
-                onClick={() => !isLoading && handleSampleClick(sample.id)}
-                disabled={isLoading}
-                className="group relative flex flex-col p-5 rounded-xl text-left bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-indigo-500/40 transition-all duration-200 hover:shadow-lg hover:shadow-indigo-500/5 disabled:opacity-60"
+                className="group relative flex flex-col justify-between p-5 rounded-xl text-left bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-indigo-500/40 transition-all duration-200 hover:shadow-lg hover:shadow-indigo-500/5"
               >
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-3">
-                    <div className={`p-2.5 rounded-lg bg-gradient-to-br border ${sample.color}`}>
-                      <Icon className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-sm text-white group-hover:text-indigo-300 transition">
-                        {sample.title}
-                      </h4>
-                      <span className="text-[10px] font-semibold text-slate-400 uppercase tracking-wider">
-                        {sample.tag}
-                      </span>
+                <div>
+                  <div className="flex items-start justify-between mb-3">
+                    <div className="flex items-center gap-3">
+                      <div className={`p-2.5 rounded-lg bg-gradient-to-br border ${sample.color}`}>
+                        <Icon className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-sm text-white group-hover:text-indigo-300 transition">
+                          {sample.title}
+                        </h4>
+                        <div className="flex items-center gap-2 mt-0.5">
+                          <span className="text-[10px] font-semibold text-slate-400 uppercase tracking-wider">
+                            {sample.tag}
+                          </span>
+                          <span className="text-slate-600">•</span>
+                          <span className="text-[10px] font-bold text-emerald-400">
+                            {sample.format}
+                          </span>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  {isThisLoading ? (
-                    <Loader2 className="w-4 h-4 text-indigo-400 animate-spin" />
-                  ) : (
-                    <ArrowRight className="w-4 h-4 text-slate-500 group-hover:text-indigo-400 group-hover:translate-x-0.5 transition" />
-                  )}
+                  <p className="text-xs text-slate-400 leading-relaxed mb-3">
+                    {sample.description}
+                  </p>
+
+                  <div className="text-[11px] font-mono text-indigo-300 bg-slate-950/60 px-2.5 py-1.5 rounded-lg border border-slate-800/80 mb-4">
+                    {sample.sheets}
+                  </div>
                 </div>
 
-                <p className="text-xs text-slate-400 leading-relaxed">
-                  {sample.description}
-                </p>
-              </button>
+                <div className="flex items-center justify-between pt-3 border-t border-slate-800/80 gap-2">
+                  {sample.isExcel && (
+                    <a
+                      href={`/api/upload/download-sample/${sample.id}`}
+                      download
+                      onClick={(e) => e.stopPropagation()}
+                      className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-medium text-slate-300 bg-slate-800 hover:bg-slate-700 hover:text-white border border-slate-700 transition"
+                      title="Download .xlsx file to test uploading yourself"
+                    >
+                      <Download className="w-3.5 h-3.5 text-slate-400" />
+                      <span>Download .xlsx</span>
+                    </a>
+                  )}
+
+                  <button
+                    onClick={() => !isLoading && handleSampleClick(sample.id)}
+                    disabled={isLoading}
+                    className="flex-1 flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-white bg-indigo-600/90 hover:bg-indigo-600 transition disabled:opacity-60"
+                  >
+                    {isThisLoading ? (
+                      <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                    ) : (
+                      <>
+                        <span>Load Dataset</span>
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </>
+                    )}
+                  </button>
+                </div>
+              </div>
             );
           })}
         </div>

@@ -31,6 +31,41 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
     return num.toLocaleString();
   };
 
+  const formatMetricValue = (kpi: any) => {
+    const val = kpi.display_value !== undefined ? kpi.display_value : (kpi.is_additive === false ? kpi.average : kpi.total);
+    const labelLower = (kpi.label || '').toLowerCase();
+    
+    // Percentage
+    if (kpi.format === 'percent' || labelLower.includes('%') || labelLower.includes('pct') || labelLower.includes('rate') || labelLower.includes('margin') || labelLower.includes('discount')) {
+      // If value is between 0 and 1, multiply by 100
+      const pctVal = (val <= 1.0 && val >= -1.0 && !labelLower.includes('100')) ? val * 100 : val;
+      return `${pctVal.toFixed(1)}%`;
+    }
+    // Rating or score
+    if (kpi.format === 'score' || labelLower.includes('satisfaction') || labelLower.includes('rating') || labelLower.includes('score')) {
+      return `${val.toFixed(1)} / 5.0`;
+    }
+    // Currency
+    if (kpi.format === 'currency' || labelLower.includes('$') || labelLower.includes('sales') || labelLower.includes('revenue') || labelLower.includes('profit') || labelLower.includes('cost') || labelLower.includes('spend') || labelLower.includes('salary') || labelLower.includes('income')) {
+      return `$${formatNumber(val)}`;
+    }
+    // Days
+    if (labelLower.includes('days') || labelLower.includes('lead time')) {
+      return `${val.toFixed(1)} days`;
+    }
+    return formatNumber(val);
+  };
+
+  const formatSubtext = (kpi: any) => {
+    const isRate = kpi.is_additive === false;
+    if (isRate) {
+      return `Range: [${kpi.min} - ${kpi.max}]`;
+    }
+    const labelLower = (kpi.label || '').toLowerCase();
+    const isCurrency = labelLower.includes('$') || labelLower.includes('sales') || labelLower.includes('revenue') || labelLower.includes('profit') || labelLower.includes('cost') || labelLower.includes('salary');
+    return `Avg / unit: ${isCurrency ? '$' : ''}${formatNumber(kpi.average)}`;
+  };
+
   return (
     <div className="space-y-8">
       {/* Top Banner / Domain Highlight */}
@@ -66,32 +101,35 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
 
       {/* Adaptive KPI Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {profile.executive_kpis.slice(0, 4).map((kpi, idx) => (
-          <div
-            key={idx}
-            className={`p-5 rounded-xl border bg-slate-900/70 transition ${
-              kpi.is_primary ? 'border-indigo-500/40 bg-indigo-950/20' : 'border-slate-800'
-            }`}
-          >
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider truncate max-w-[160px]" title={kpi.label}>
-                {kpi.label}
-              </span>
-              {kpi.is_primary && (
-                <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-indigo-500/20 text-indigo-300">
-                  Primary
+        {profile.executive_kpis.slice(0, 4).map((kpi, idx) => {
+          const isRate = kpi.is_additive === false;
+          return (
+            <div
+              key={idx}
+              className={`p-5 rounded-xl border bg-slate-900/70 transition ${
+                kpi.is_primary ? 'border-indigo-500/40 bg-indigo-950/20' : 'border-slate-800'
+              }`}
+            >
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider truncate max-w-[160px]" title={kpi.label}>
+                  {kpi.display_label || (isRate ? `Avg ${kpi.label}` : `Total ${kpi.label}`)}
                 </span>
-              )}
+                <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${kpi.is_primary ? 'bg-indigo-500/20 text-indigo-300' : 'bg-slate-800 text-slate-400'}`}>
+                  {kpi.is_primary ? 'Primary' : (isRate ? 'Average' : 'Volume')}
+                </span>
+              </div>
+              <div className="text-2xl font-extrabold text-white tracking-tight">
+                {formatMetricValue(kpi)}
+              </div>
+              <div className="text-[11px] text-slate-400 mt-1.5 flex items-center justify-between">
+                <span>{formatSubtext(kpi)}</span>
+                <span className="text-slate-500">
+                  {isRate ? `N=${profile.total_rows.toLocaleString()}` : `Total`}
+                </span>
+              </div>
             </div>
-            <div className="text-2xl font-extrabold text-white tracking-tight">
-              {formatNumber(kpi.total)}
-            </div>
-            <div className="text-[11px] text-slate-400 mt-1.5 flex items-center justify-between">
-              <span>Avg: {formatNumber(kpi.average)}</span>
-              <span className="text-slate-500">[{formatNumber(kpi.min)} - {formatNumber(kpi.max)}]</span>
-            </div>
-          </div>
-        ))}
+          );
+        })}
 
         {profile.executive_kpis.length < 4 && (
           <div className="p-5 rounded-xl border border-slate-800 bg-slate-900/70">

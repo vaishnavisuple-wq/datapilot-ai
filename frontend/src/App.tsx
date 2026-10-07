@@ -221,7 +221,7 @@ export function App() {
               )}
 
               {activeTab === 'charts' && (
-                <ChartsSection charts={charts} />
+                <ChartsSection charts={charts} sessionId={sessionId || undefined} profile={profile || undefined} />
               )}
 
               {activeTab === 'compare' && sessionId && (

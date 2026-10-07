@@ -54,23 +54,32 @@ class CalculationEngine:
         clean_df = df.dropna(subset=[dimension, metric])
         grouped = clean_df.groupby(dimension)[metric]
 
-        if agg == "sum":
+        # Determine smart aggregation if set to auto or sum for non-summable metrics
+        actual_agg = agg
+        m_low = metric.lower()
+        is_rate = any(k in m_low for k in ["rate", "pct", "%", "margin", "discount", "attainment", "satisfaction", "rating", "score", "price", "cac", "arpu", "lead time", "tenure"])
+        
+        if (agg == "auto" or agg == "sum") and is_rate:
+            actual_agg = "mean"
+
+        if actual_agg == "sum":
             res = grouped.sum()
-        elif agg == "mean" or agg == "avg":
+        elif actual_agg in ["mean", "avg"]:
             res = grouped.mean()
-        elif agg == "count":
+        elif actual_agg == "count":
             res = grouped.count()
-        elif agg == "min":
+        elif actual_agg == "min":
             res = grouped.min()
-        elif agg == "max":
+        elif actual_agg == "max":
             res = grouped.max()
-        elif agg == "median":
+        elif actual_agg == "median":
             res = grouped.median()
         else:
             res = grouped.sum()
 
         res = res.sort_values(ascending=not sort_desc)
-        total_sum = float(clean_df[metric].sum()) if agg in ["sum", "count"] else None
+        total_sum = float(clean_df[metric].sum()) if actual_agg in ["sum", "count"] else None
+        overall_mean = float(clean_df[metric].mean()) if actual_agg == "mean" and len(clean_df[metric]) > 0 else None
 
         records = []
         for name, val in res.head(top_n).items():
@@ -79,14 +88,17 @@ class CalculationEngine:
                 "category": str(name),
                 "value": round(f_val, 2),
             }
-            if total_sum and total_sum > 0 and agg == "sum":
+            if total_sum and total_sum > 0 and actual_agg == "sum":
                 item["share_percentage"] = round((f_val / total_sum) * 100, 2)
+            elif overall_mean and overall_mean > 0 and actual_agg == "mean":
+                item["vs_overall_avg"] = round(((f_val - overall_mean) / overall_mean) * 100, 1)
             records.append(item)
 
         return {
             "dimension": dimension,
             "metric": metric,
-            "aggregation": agg,
+            "aggregation": actual_agg,
+            "is_rate": is_rate,
             "total_groups": int(len(res)),
             "data": records
         }
